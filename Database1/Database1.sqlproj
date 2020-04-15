@@ -63,6 +63,8 @@
   <ItemGroup>
     <Build Include="Dim\DimPerson.sql" />
     <Build Include="Facts\Transactions.sql" />
+    <Build Include="Dim\DimStatus.sql" />
+    <Build Include="Dim\Dimtemp.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database1.refactorlog" />
