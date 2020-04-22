@@ -1,0 +1,320 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "TestAssignment-Rishabh"
+		},
+		"TestAssignment_LinkedService_Rishabh_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'TestAssignment_LinkedService_Rishabh'"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/TestAssignment_LinkedService_Rishabh')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"parameters": {
+					"DBName": {
+						"type": "string",
+						"defaultValue": "Traniee_Assignment"
+					},
+					"ServerName": {
+						"type": "string",
+						"defaultValue": "contata.database.windows.net"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('TestAssignment_LinkedService_Rishabh_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/TestCopy_Rishabh_DataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "TestAssignment_LinkedService_Rishabh",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"DBName": {
+							"value": "@dataset().DBName",
+							"type": "Expression"
+						},
+						"ServerName": {
+							"value": "@dataset().ServerName",
+							"type": "Expression"
+						}
+					}
+				},
+				"parameters": {
+					"DBName": {
+						"type": "string",
+						"defaultValue": "Traniee_Assignment"
+					},
+					"ServerName": {
+						"type": "string",
+						"defaultValue": "contata.database.windows.net"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [
+					{
+						"name": "ID",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "FirstName",
+						"type": "nvarchar"
+					},
+					{
+						"name": "LastName",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Age",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "DOB",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "Email",
+						"type": "varchar"
+					},
+					{
+						"name": "GoodToImport",
+						"type": "bit"
+					}
+				],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "TestCopy_Rishabh"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/TestAssignment_LinkedService_Rishabh')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/TestCopy_Source_DataSet')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "TestAssignment_LinkedService_Rishabh",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"DBName": {
+							"value": "@dataset().DBName",
+							"type": "Expression"
+						},
+						"ServerName": {
+							"value": "@dataset().ServerName",
+							"type": "Expression"
+						}
+					}
+				},
+				"parameters": {
+					"DBName": {
+						"type": "string",
+						"defaultValue": "Traniee_Assignment"
+					},
+					"ServerName": {
+						"type": "string",
+						"defaultValue": "contata.database.windows.net"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [
+					{
+						"name": "ID",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "FirstName",
+						"type": "nvarchar"
+					},
+					{
+						"name": "LastName",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Age",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "DOB",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "Email",
+						"type": "varchar"
+					},
+					{
+						"name": "GoodToImport",
+						"type": "bit"
+					}
+				],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "TestCopy"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/TestAssignment_LinkedService_Rishabh')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/Test_Assignment_Rishabh_Pipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"activities": [
+					{
+						"name": "Copy data TestCopy",
+						"description": "some description here",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "AzureSqlSource",
+								"sqlReaderQuery": "Select FirstName, LastName, Age, DOB, Email, GoodToImport FROM TestCopy",
+								"queryTimeout": "02:00:00"
+							},
+							"sink": {
+								"type": "AzureSqlSink",
+								"writeBatchSize": 100,
+								"sqlWriterStoredProcedureName": "[[dbo].[CopyAssignment_Rishabh]",
+								"sqlWriterTableType": "TestCopyType",
+								"storedProcedureTableTypeParameterName": "TestCopytype",
+								"disableMetricsCollection": false
+							},
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"name": "FirstName",
+											"type": "String"
+										},
+										"sink": {
+											"name": "Firstname",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "LastName",
+											"type": "String"
+										},
+										"sink": {
+											"name": "Lastname",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "Age",
+											"type": "Int32"
+										},
+										"sink": {
+											"name": "Age",
+											"type": "Int32"
+										}
+									},
+									{
+										"source": {
+											"name": "DOB",
+											"type": "DateTime"
+										},
+										"sink": {
+											"name": "Dob",
+											"type": "DateTime"
+										}
+									},
+									{
+										"source": {
+											"name": "Email",
+											"type": "String"
+										},
+										"sink": {
+											"name": "Email",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "GoodToImport",
+											"type": "Boolean"
+										},
+										"sink": {
+											"name": "GoodToImport",
+											"type": "Boolean"
+										}
+									}
+								]
+							}
+						},
+						"inputs": [
+							{
+								"referenceName": "TestCopy_Source_DataSet",
+								"type": "DatasetReference",
+								"parameters": {
+									"DBName": "Traniee_Assignment",
+									"ServerName": "contata.database.windows.net"
+								}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "TestCopy_Rishabh_DataSet",
+								"type": "DatasetReference",
+								"parameters": {
+									"DBName": "Traniee_Assignment",
+									"ServerName": "contata.database.windows.net"
+								}
+							}
+						]
+					}
+				],
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/TestCopy_Source_DataSet')]",
+				"[concat(variables('factoryId'), '/datasets/TestCopy_Rishabh_DataSet')]"
+			]
+		}
+	]
+}
