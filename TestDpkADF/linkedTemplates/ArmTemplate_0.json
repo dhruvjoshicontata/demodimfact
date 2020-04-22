@@ -1,0 +1,301 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "TestDpkADF"
+		},
+		"AzureSqlDatabase1LinkDpk_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlDatabase1LinkDpk'"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlDatabase1LinkDpk')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "Linked service for Azure SQL database Trainee Assignment",
+				"parameters": {
+					"DBName": {
+						"type": "string",
+						"defaultValue": "Traniee_Assignment"
+					},
+					"ServerName": {
+						"type": "string",
+						"defaultValue": "contata.database.windows.net"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlDatabase",
+				"typeProperties": {
+					"connectionString": "[parameters('AzureSqlDatabase1LinkDpk_connectionString')]"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTable1')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase1LinkDpk",
+					"type": "LinkedServiceReference"
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [
+					{
+						"name": "ID",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "Firstname",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Lastname",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Age",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "Dob",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "Email",
+						"type": "nvarchar"
+					},
+					{
+						"name": "GoodToImport",
+						"type": "bit"
+					}
+				],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "TestCopy_Deepak"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase1LinkDpk')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureSqlTableSource')]",
+			"type": "Microsoft.DataFactory/factories/datasets",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"linkedServiceName": {
+					"referenceName": "AzureSqlDatabase1LinkDpk",
+					"type": "LinkedServiceReference",
+					"parameters": {
+						"DBName": "Traniee_Assignment",
+						"ServerName": "contata.database.windows.net"
+					}
+				},
+				"parameters": {
+					"DBName": {
+						"type": "string",
+						"defaultValue": "Traniee_Assignment"
+					},
+					"ServerName": {
+						"type": "string",
+						"defaultValue": "contata.database.windows.net"
+					}
+				},
+				"annotations": [],
+				"type": "AzureSqlTable",
+				"schema": [
+					{
+						"name": "ID",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "FirstName",
+						"type": "nvarchar"
+					},
+					{
+						"name": "LastName",
+						"type": "nvarchar"
+					},
+					{
+						"name": "Age",
+						"type": "int",
+						"precision": 10
+					},
+					{
+						"name": "DOB",
+						"type": "datetime",
+						"precision": 23,
+						"scale": 3
+					},
+					{
+						"name": "Email",
+						"type": "varchar"
+					},
+					{
+						"name": "GoodToImport",
+						"type": "bit"
+					}
+				],
+				"typeProperties": {
+					"schema": "dbo",
+					"table": "TestCopy"
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/linkedServices/AzureSqlDatabase1LinkDpk')]"
+			]
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/DpkDemoPipeline')]",
+			"type": "Microsoft.DataFactory/factories/pipelines",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "Test Pipeline made by Deepak for copy activity assignment.",
+				"activities": [
+					{
+						"name": "Copy Activity Deepak",
+						"description": "Copy assignment given by Rahul Ahuja",
+						"type": "Copy",
+						"dependsOn": [],
+						"policy": {
+							"timeout": "7.00:00:00",
+							"retry": 0,
+							"retryIntervalInSeconds": 30,
+							"secureOutput": false,
+							"secureInput": false
+						},
+						"userProperties": [],
+						"typeProperties": {
+							"source": {
+								"type": "AzureSqlSource",
+								"sqlReaderQuery": "select firstname,lastname,age,Dob,email,goodtoimport from testcopy",
+								"queryTimeout": "02:00:00"
+							},
+							"sink": {
+								"type": "AzureSqlSink",
+								"sqlWriterStoredProcedureName": "[[dbo].[CopyAssignment_Deepak]",
+								"sqlWriterTableType": "TestCopyType",
+								"storedProcedureTableTypeParameterName": "TestCopytype"
+							},
+							"enableStaging": false,
+							"translator": {
+								"type": "TabularTranslator",
+								"mappings": [
+									{
+										"source": {
+											"name": "firstname",
+											"type": "String"
+										},
+										"sink": {
+											"name": "Firstname",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "lastname",
+											"type": "String"
+										},
+										"sink": {
+											"name": "Lastname",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "age",
+											"type": "Int32"
+										},
+										"sink": {
+											"name": "Age",
+											"type": "Int32"
+										}
+									},
+									{
+										"source": {
+											"name": "Dob",
+											"type": "DateTime"
+										},
+										"sink": {
+											"name": "Dob",
+											"type": "DateTime"
+										}
+									},
+									{
+										"source": {
+											"name": "email",
+											"type": "String"
+										},
+										"sink": {
+											"name": "Email",
+											"type": "String"
+										}
+									},
+									{
+										"source": {
+											"name": "goodtoimport",
+											"type": "Boolean"
+										},
+										"sink": {
+											"name": "GoodToImport",
+											"type": "Boolean"
+										}
+									}
+								]
+							}
+						},
+						"inputs": [
+							{
+								"referenceName": "AzureSqlTableSource",
+								"type": "DatasetReference",
+								"parameters": {
+									"DBName": "Traniee_assignment",
+									"ServerName": "contata.database.windows.net"
+								}
+							}
+						],
+						"outputs": [
+							{
+								"referenceName": "AzureSqlTable1",
+								"type": "DatasetReference",
+								"parameters": {}
+							}
+						]
+					}
+				],
+				"parameters": {
+					"DBname": {
+						"type": "string",
+						"defaultValue": "Traniee_Assignment"
+					},
+					"ServerName": {
+						"type": "string",
+						"defaultValue": "contata.database.windows.net"
+					}
+				},
+				"annotations": []
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/datasets/AzureSqlTableSource')]",
+				"[concat(variables('factoryId'), '/datasets/AzureSqlTable1')]"
+			]
+		}
+	]
+}
