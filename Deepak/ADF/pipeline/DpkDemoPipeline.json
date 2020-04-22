@@ -1,7 +1,7 @@
 {
 	"name": "DpkDemoPipeline",
 	"properties": {
-		"description": "Test Pipeline made by Deepak for copy activity assignment",
+		"description": "Test Pipeline made by Deepak for copy activity assignment.",
 		"activities": [
 			{
 				"name": "Copy Activity Deepak",
