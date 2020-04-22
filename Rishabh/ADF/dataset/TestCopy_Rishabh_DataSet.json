@@ -1,0 +1,70 @@
+{
+	"name": "TestCopy_Rishabh_DataSet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TestAssignment_LinkedService_Rishabh",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": {
+					"value": "@dataset().DBName",
+					"type": "Expression"
+				},
+				"ServerName": {
+					"value": "@dataset().ServerName",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"DBName": {
+				"type": "string",
+				"defaultValue": "Traniee_Assignment"
+			},
+			"ServerName": {
+				"type": "string",
+				"defaultValue": "contata.database.windows.net"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "FirstName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LastName",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Age",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "DOB",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "Email",
+				"type": "varchar"
+			},
+			{
+				"name": "GoodToImport",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "TestCopy_Rishabh"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
