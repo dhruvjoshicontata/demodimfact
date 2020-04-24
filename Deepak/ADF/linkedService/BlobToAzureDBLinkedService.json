@@ -1,0 +1,12 @@
+{
+	"name": "BlobToAzureDBLinkedService",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Blob to Azure SQL database linked service for blob to azure database copy assignment",
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"sasUri": "https://contatadev.blob.core.windows.net/testdeepak?st=2020-04-24T13%3A26%3A06Z&se=2020-04-25T13%3A26%3A06Z&sp=racwdl&sv=2018-03-28&sr=c&sig=7WSiuwnl%2FOEi40b7F%2Fd%2B%2BDX9c71t8OWxS7F%2FBEc9lh4%3D?st=2020-04-24T13%3A26%3A06Z&se=2020-04-25T13%3A26%3A06Z&sp=racwdl&sv=2018-03-28&sr=c&sig=7WSiuwnl%2FOEi40b7F%2Fd%2B%2BDX9c71t8OWxS7F%2FBEc9lh4%3D"
+		}
+	}
+}
