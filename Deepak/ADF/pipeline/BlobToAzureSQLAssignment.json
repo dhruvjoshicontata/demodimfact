@@ -1,6 +1,45 @@
 {
-	"name": "pipeline1",
+	"name": "BlobToAzureSQLAssignment",
 	"properties": {
+		"activities": [
+			{
+				"name": "CopyAssignmentBlobToAzureSQLDB",
+				"description": "Copy assignment from Blob CSV file to Azure SQL DB",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"enableStaging": false
+				},
+				"inputs": [
+					{
+						"referenceName": "FRMFileBlob",
+						"type": "DatasetReference",
+						"parameters": {
+							"DBName": "Traniee_Assignment",
+							"ServerName": "contata.database.windows.net"
+						}
+					}
+				]
+			}
+		],
 		"annotations": []
 	}
 }
