@@ -1,6 +1,7 @@
 {
 	"name": "BlobToAzureSQLDBPipeline",
 	"properties": {
+		"description": "Test asignment by Deepak for Copy activity from Blob storage CSV to Azure SQL DB",
 		"activities": [
 			{
 				"name": "CopyAssignmentBlobToAzureSQLDB",
@@ -40,6 +41,16 @@
 				]
 			}
 		],
+		"parameters": {
+			"DBName": {
+				"type": "string",
+				"defaultValue": "Traniee_Assignment"
+			},
+			"ServerName": {
+				"type": "string",
+				"defaultValue": "contata.database.windows.net"
+			}
+		},
 		"annotations": []
 	}
 }
