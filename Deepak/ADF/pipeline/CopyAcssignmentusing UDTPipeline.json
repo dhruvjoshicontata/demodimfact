@@ -1,5 +1,5 @@
 {
-	"name": "DpkDemoPipeline",
+	"name": "CopyAcssignmentusing UDTPipeline",
 	"properties": {
 		"description": "Test Pipeline made by Deepak for copy activity assignment.",
 		"activities": [
