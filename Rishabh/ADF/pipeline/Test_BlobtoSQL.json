@@ -156,7 +156,7 @@
 							},
 							{
 								"source": {
-									"name": "Express Location",
+									"name": "Existing Sales Rep",
 									"type": "String"
 								},
 								"sink": {
