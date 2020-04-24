@@ -1,0 +1,38 @@
+{
+	"name": "FRMCSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "CSV2SQL",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DBNAME": {
+				"type": "string",
+				"defaultValue": "Traniee_Assignment"
+			},
+			"SERVERNAME": {
+				"type": "string",
+				"defaultValue": "contata.database.windows.net"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FRMLocation20200227-083014.csv",
+				"container": "testrishabh"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "\"Location ID\"|\"1 mile pop\"|\"3 mile pop\"|\"5 mile pop\"|\"Actual Opening\"|\"AverageTerm\"|\"Avg  monthly gross personal training revenue\"|\"BOE Verified\"|\"Close Date\"|\"Competition\"|\"E-mail Address\"|\"Exchange Rate\"|\"Existing Sales Rep\"|\"Express Location\"|\"Financing Type\"|\"Gross Rent\"|\"Hours of Operation\"|\"Lack of marketing\"|\"Landlord Issues\"|\"Legal Entity\"|\"Location Type\"|\"Market Type\"|\"Median income > $50000\"|\"Members  Dues and PIF\"|\"Monthly Fee Amt\"|\"Multi-Purpose Room\"|\"Multi-Purpose Sq Ft\"|\"No Operating Capital\"|\"No Sales Revenue\"|\"Number of Rooms\"|\"Online Signup\"|\"Open Status\"|\"Open Temporary Pending Relo\"|\"Opened On\"|\"Original Franchisee Open Date\"|\"Other\"|\"Other Equipment\"|\"Other Operating System\"|\"Owner\"|\"Partnership Dispute\"|\"Payroll\"|\"Percent Owner 1\"|\"Percent Owner 2\"|\"Percent Owner 3\"|\"Percent Owner 4\"|\"Percent Owner 5\"|\"Percent Owner 6\"|\"Person  Training Revenue\"|\"Personal Issues\"|\"Personal Training\"|\"Personal Training Revenue\"|\"Primary Contact\"|\"Principal Operator\"|\"Principal Owner\"|\"Problem %\"|\"Profit Loss\"|\"Remit Amount Last Quarter\"|\"Remit Amount Quarter Change\"|\"Sale Date\"|\"Satellite Club\"|\"Site\"|\"Stage\"|\"Team Workouts\"|\"Territory\"|\"Total Contracts\"|\"Transfer Fee\"|\"Utilities\"|\"Veteran\"|\"Virtual Coaching\"|\"Waxing Account#\"|\"Website\"|\"Active CMS\"|\"AFLP Auto Checklist\"|\"AFLP In-club Training Lead\"|\"AFLP last Post-Launch Drip email sent\"|\"AFLP Marketing\"|\"AFLP Notes\"|\"Agreement Renewal Date\"|\"Agreement Signed\"|\"Average Contract Value\"|\"Average Member Value\"|\"Billing Account Number\"|\"BOE\"|\"Brand\"|\"City\"|\"Club OS\"|\"Club Ready\"|\"Company\"|\"Country\"|\"Created On\"|\"Currency\"|\"Draft %\"|\"Dues\"|\"Exited Agreements\"|\"Latitude\"|\"Location\"|\"Location #\"|\"Longitude\"|\"Main Phone\"|\"Modified On\"|\"Monthly Attrition\"|\"NEW Agreements\"|\"PIF %\"|\"Remit Amount\"|\"Renewal Fee\"|\"Renewal Status\"|\"Rolling 12 Month Attrition\"|\"Sq Ft\"|\"State\"|\"Status\"|\"Status Reason\"|\"Time Zone\"|\"Total Rent\"|\"Website URL\"|\"ZIP Postal Code\"|\"AFLP Agreement\"|\"Current C2I\"|\"Differentiator\"",
+				"type": "String"
+			}
+		]
+	}
+}
