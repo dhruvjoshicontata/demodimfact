@@ -27,6 +27,9 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
 					"enableStaging": false
 				},
 				"inputs": [
@@ -37,6 +40,12 @@
 							"DBName": "Traniee_Assignment",
 							"ServerName": "contata.database.windows.net"
 						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "FRMAzureSQLTableDataset",
+						"type": "DatasetReference"
 					}
 				]
 			}
