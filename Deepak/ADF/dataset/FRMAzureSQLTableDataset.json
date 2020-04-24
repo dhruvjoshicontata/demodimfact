@@ -1,6 +1,7 @@
 {
 	"name": "FRMAzureSQLTableDataset",
 	"properties": {
+		"description": "Data Set for Azure SQL database table FRMLOCATION for copy assignment from BLOB to this database table",
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1LinkDpk",
 			"type": "LinkedServiceReference",
