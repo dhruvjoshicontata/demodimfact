@@ -25,11 +25,1211 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "AzureSqlSink",
+						"writeBatchSize": 1000,
+						"disableMetricsCollection": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Location ID",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Location_ID",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "1 mile pop",
+									"type": "String"
+								},
+								"sink": {
+									"name": "1_mile_pop",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "3 mile pop",
+									"type": "String"
+								},
+								"sink": {
+									"name": "3_mile_pop",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "5 mile pop",
+									"type": "String"
+								},
+								"sink": {
+									"name": "5_mile_pop",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Actual Opening",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Actual_Opening",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AverageTerm",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AverageTerm",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Avg  monthly gross personal training revenue",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Avg_monthly_gross_personal_training_revenue",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "BOE Verified",
+									"type": "String"
+								},
+								"sink": {
+									"name": "BOE_Verified",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Close Date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Close_Date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Competition",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Competition",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "E-mail Address",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Email_Address",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Exchange Rate",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Exchange_Rate",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Express Location",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Existing_Sales_Rep",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Express Location",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Express_Location",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Financing Type",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Financing_Type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Gross Rent",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Gross_Rent",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Hours of Operation",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Hours_of_Operation",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Lack of marketing",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Lack_of_marketing",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Landlord Issues",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Landlord_Issues",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Legal Entity",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Legal_Entity",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Location Type",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Location_Type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Market Type",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Market_Type",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Median income > $50000",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Median_income_50000",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Members  Dues and PIF",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Members_Dues_and_PIF",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Fee Amt",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Monthly_Fee_Amt",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Multi-Purpose Room",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MultiPurpose_Room",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Multi-Purpose Sq Ft",
+									"type": "String"
+								},
+								"sink": {
+									"name": "MultiPurpose_Sq_Ft",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "No Operating Capital",
+									"type": "String"
+								},
+								"sink": {
+									"name": "No_Operating_Capital",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "No Sales Revenue",
+									"type": "String"
+								},
+								"sink": {
+									"name": "No_Sales_Revenue",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Number of Rooms",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Number_of_Rooms",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Online Signup",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Online_Signup",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Open Status",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Open_Status",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Open Temporary Pending Relo",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Open_Temporary_Pending_Relo",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Opened On",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Opened_On",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Original Franchisee Open Date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Original_Franchisee_Open_Date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Other",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Other",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Other Equipment",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Other_Equipment",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Other Operating System",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Other_Operating_System",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Owner",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Owner",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Partnership Dispute",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Partnership_Dispute",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Payroll",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Payroll",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 1",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Percent_Owner_1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 2",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Percent_Owner_2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 3",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Percent_Owner_3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 4",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Percent_Owner_4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 5",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Percent_Owner_5",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 6",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Percent_Owner_6",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Person  Training Revenue",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Person_Training_Revenue",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Issues",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Personal_Issues",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Training",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Personal_Training",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Training Revenue",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Personal_Training_Revenue",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Primary Contact",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Primary_Contact",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Principal Operator",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Principal_Operator",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Principal Owner",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Principal_Owner",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Problem %",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Problem_",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Profit Loss",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Profit_Loss",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount Last Quarter",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Remit_Amount_Last_Quarter",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount Quarter Change",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Remit_Amount_Quarter_Change",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Sale Date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Sale_Date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Satellite Club",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Satellite_Club",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Site",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Site",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Stage",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Stage",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Team Workouts",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Team_Workouts",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Territory",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Territory",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Total Contracts",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Total_Contracts",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Transfer Fee",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Transfer_Fee",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Utilities",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Utilities",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Veteran",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Veteran",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Virtual Coaching",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Virtual_Coaching",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Waxing Account#",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Waxing_Account",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Website",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Website",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Active CMS",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Active_CMS",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Auto Checklist",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AFLP_Auto_Checklist",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP In-club Training Lead",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AFLP_Inclub_Training_Lead",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP last Post-Launch Drip email sent",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AFLP_last_PostLaunch_Drip_email_sent",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Marketing",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AFLP_Marketing",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Notes",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AFLP_Notes",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Agreement Renewal Date",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Agreement_Renewal_Date",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Agreement Signed",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Agreement_Signed",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Average Contract Value",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Average_Contract_Value",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Average Member Value",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Average_Member_Value",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Billing Account Number",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Billing_Account_Number",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "BOE",
+									"type": "String"
+								},
+								"sink": {
+									"name": "BOE",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Brand",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Brand",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "City",
+									"type": "String"
+								},
+								"sink": {
+									"name": "City",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Club OS",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Club_OS",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Club Ready",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Club_Ready",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Company",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Company",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Created On",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Created_On",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Currency",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Currency",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Draft %",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Draft_",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Dues",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Dues",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Exited Agreements",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Exited_Agreements",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Latitude",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Latitude",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Location",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Location",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Location #",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Location_",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Longitude",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Longitude",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Main Phone",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Main_Phone",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Modified On",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Modified_On",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Attrition",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Monthly_Attrition",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "NEW Agreements",
+									"type": "String"
+								},
+								"sink": {
+									"name": "NEW_Agreements",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "PIF %",
+									"type": "String"
+								},
+								"sink": {
+									"name": "PIF_",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Remit_Amount",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Renewal Fee",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Renewal_Fee",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Renewal Status",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Renewal_Status",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Rolling 12 Month Attrition",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Rolling_12_Month_Attrition",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Sq Ft",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Sq_Ft",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "State",
+									"type": "String"
+								},
+								"sink": {
+									"name": "State",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Status",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Status",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Status Reason",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Status_Reason",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Time Zone",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Time_Zone",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Total Rent",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Total_Rent",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Website URL",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Website_URL",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ZIP Postal Code",
+									"type": "String"
+								},
+								"sink": {
+									"name": "ZIP_Postal_Code",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Agreement",
+									"type": "String"
+								},
+								"sink": {
+									"name": "AFLP_Agreement",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Current C2I",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Current_C2I",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "Differentiator",
+									"type": "String"
+								},
+								"sink": {
+									"name": "Differentiator",
+									"type": "String"
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "FRMCSV",
+						"type": "DatasetReference",
+						"parameters": {
+							"DBNAME": "Traniee_Assignment",
+							"SERVERNAME": "contata.database.windows.net"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "CSV2Table",
 						"type": "DatasetReference",
 						"parameters": {
 							"DBNAME": "Traniee_Assignment",
