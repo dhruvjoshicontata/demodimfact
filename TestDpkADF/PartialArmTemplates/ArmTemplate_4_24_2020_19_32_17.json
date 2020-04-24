@@ -1,0 +1,30 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "TestDpkADF"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/BlobToAzureDBLinkedService')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"description": "Blob to Azure SQL database linked service for blob to azure database copy assignment",
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"sasUri": "https://contatadev.blob.core.windows.net/testdeepak?st=2020-04-24T13%3A37%3A02Z&se=2020-04-25T13%3A37%3A02Z&sp=racwdl&sv=2018-03-28&sr=c&sig=INqV6mSMwCZXYen0GStErfJoiGtaw6LoEAflp%2BDd15E%3D"
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
