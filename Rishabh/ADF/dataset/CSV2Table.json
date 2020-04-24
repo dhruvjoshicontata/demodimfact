@@ -1,0 +1,509 @@
+{
+	"name": "CSV2Table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TestAssignment_LinkedService_Rishabh",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": {
+					"value": "@dataset().DBNAME",
+					"type": "Expression"
+				},
+				"ServerName": {
+					"value": "@dataset().SERVERNAME",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"DBNAME": {
+				"type": "string",
+				"defaultValue": "Traniee_Assignment"
+			},
+			"SERVERNAME": {
+				"type": "string",
+				"defaultValue": "contata.database.windows.net"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Location_ID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "1_mile_pop",
+				"type": "nvarchar"
+			},
+			{
+				"name": "3_mile_pop",
+				"type": "nvarchar"
+			},
+			{
+				"name": "5_mile_pop",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Actual_Opening",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AverageTerm",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Avg_monthly_gross_personal_training_revenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BOE_Verified",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Close_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Competition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Email_Address",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Exchange_Rate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Existing_Sales_Rep",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Express_Location",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Financing_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Gross_Rent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Hours_of_Operation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lack_of_marketing",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Landlord_Issues",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Legal_Entity",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Location_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Market_Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Median_income_50000",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Members_Dues_and_PIF",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Monthly_Fee_Amt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MultiPurpose_Room",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MultiPurpose_Sq_Ft",
+				"type": "nvarchar"
+			},
+			{
+				"name": "No_Operating_Capital",
+				"type": "nvarchar"
+			},
+			{
+				"name": "No_Sales_Revenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Number_of_Rooms",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Online_Signup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Open_Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Open_Temporary_Pending_Relo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Opened_On",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Original_Franchisee_Open_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Other",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Other_Equipment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Other_Operating_System",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Owner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Partnership_Dispute",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payroll",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Percent_Owner_1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Percent_Owner_2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Percent_Owner_3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Percent_Owner_4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Percent_Owner_5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Percent_Owner_6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Person_Training_Revenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Personal_Issues",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Personal_Training",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Personal_Training_Revenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Primary_Contact",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Principal_Operator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Principal_Owner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Problem_",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Profit_Loss",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remit_Amount_Last_Quarter",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remit_Amount_Quarter_Change",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sale_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Satellite_Club",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Site",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Stage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Team_Workouts",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Territory",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Total_Contracts",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Transfer_Fee",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Utilities",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Veteran",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Virtual_Coaching",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Waxing_Account",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Website",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Active_CMS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLP_Auto_Checklist",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLP_Inclub_Training_Lead",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLP_last_PostLaunch_Drip_email_sent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLP_Marketing",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLP_Notes",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Agreement_Renewal_Date",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Agreement_Signed",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Average_Contract_Value",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Average_Member_Value",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Billing_Account_Number",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BOE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Brand",
+				"type": "nvarchar"
+			},
+			{
+				"name": "City",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Club_OS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Club_Ready",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Created_On",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Draft_",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dues",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Exited_Agreements",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Latitude",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Location",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Location_",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Longitude",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Main_Phone",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Modified_On",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Monthly_Attrition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NEW_Agreements",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PIF_",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Remit_Amount",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Renewal_Fee",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Renewal_Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Rolling_12_Month_Attrition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Sq_Ft",
+				"type": "nvarchar"
+			},
+			{
+				"name": "State",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status_Reason",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Time_Zone",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Total_Rent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Website_URL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ZIP_Postal_Code",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLP_Agreement",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Current_C2I",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Differentiator",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FRMCSV"
+		}
+	}
+}
