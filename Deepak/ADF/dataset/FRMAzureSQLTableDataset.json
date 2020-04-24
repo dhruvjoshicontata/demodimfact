@@ -3,7 +3,11 @@
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureSqlDatabase1LinkDpk",
-			"type": "LinkedServiceReference"
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": "Traniee_Assignment",
+				"ServerName": "contata.database.windows.net"
+			}
 		},
 		"parameters": {
 			"DBName": {
