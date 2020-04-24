@@ -1,0 +1,22 @@
+{
+	"name": "FRMFileBlob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobToAzureDBLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "FRMLocation20200227-083014.csv",
+				"container": "testdeepak"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
