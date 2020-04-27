@@ -136,7 +136,7 @@
 						"Content-type": "application/json"
 					},
 					"body": {
-						"message": "@{activity('Copy data1').output.dataWritten}",
+						"message": "@{activity('Copy data TestCopy').output.dataWritten}",
 						"dataFactoryName": "@{pipeline().DataFactory}",
 						"pipelineName": "@{pipeline().Pipeline}",
 						"receiver": "@{pipeline().parameters.receiver}"
