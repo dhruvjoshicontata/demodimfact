@@ -1257,6 +1257,7 @@
 						"Content-type": "application\\json"
 					},
 					"body": {
+						"callBackUri": "URL",
 						"@type": "MessageCard",
 						"@context": "http://schema.org/extensions",
 						"themeColor": "0076D7",
