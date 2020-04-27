@@ -136,10 +136,57 @@
 						"Content-type": "application/json"
 					},
 					"body": {
-						"message": "@{activity('Copy data TestCopy').output.dataWritten}",
-						"dataFactoryName": "@{pipeline().DataFactory}",
-						"pipelineName": "@{pipeline().Pipeline}",
-						"callBackUri": "URL"
+						"name": "WebHookTestAssignment",
+						"properties": {
+							"activities": [
+								{
+									"name": "WebHookTestAssignment",
+									"type": "WebHook",
+									"dependsOn": [],
+									"userProperties": [],
+									"typeProperties": {
+										"url": "https://outlook.office.com/webhook/83e51960-224e-4085-b614-927fbd773345@1f2b5de9-e9dd-419a-ade5-fee6c92e7f92/IncomingWebhook/a90bfb991abb4f64861c5adc60df1cfc/630f544c-af05-4e9d-8d63-8c0e914933e0",
+										"method": "POST",
+										"headers": {
+											"Content-Type": "application/json"
+										},
+										"body": {
+											"title": "test",
+											"text": {
+												"@type": "MessageCard",
+												"@context": "http://schema.org/extensions",
+												"themeColor": "0076D7",
+												"summary": "Rishabh Garg created a new task",
+												"sections": [
+													{
+														"activityTitle": "Rishabh Garg Created a Webhook",
+														"activitySubtitle": "On Azure",
+														"facts": [
+															{
+																"name": "Assigned to",
+																"value": "Unassigned"
+															},
+															{
+																"name": "Due date",
+																"value": "27 April 2020"
+															},
+															{
+																"name": "Status",
+																"value": "Data Moved from CSV to Table"
+															}
+														],
+														"markdown": true
+													}
+												]
+											}
+										},
+										"timeout": "00:10:00",
+										"reportStatusOnCallBack": false
+									}
+								}
+							],
+							"annotations": []
+						}
 					},
 					"timeout": "00:10:00"
 				}
