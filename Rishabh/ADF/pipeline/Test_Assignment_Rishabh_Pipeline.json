@@ -136,31 +136,8 @@
 						"Content-Type": "application/json"
 					},
 					"body": {
-						"@type": "MessageCard",
-						"@context": "http://schema.org/extensions",
-						"themeColor": "0076D7",
-						"summary": "Rishabh Garg created a new task",
-						"sections": [
-							{
-								"activityTitle": "Rishabh Garg Created a Webhook",
-								"activitySubtitle": "On Azure",
-								"facts": [
-									{
-										"name": "Assigned to",
-										"value": "Unassigned"
-									},
-									{
-										"name": "Due date",
-										"value": "27 April 2020"
-									},
-									{
-										"name": "Status",
-										"value": "Data Moved from CSV to Table"
-									}
-								],
-								"markdown": true
-							}
-						]
+						"title": "Rishabh Garg Webhook",
+						"text": "test"
 					},
 					"timeout": "00:10:00"
 				}
