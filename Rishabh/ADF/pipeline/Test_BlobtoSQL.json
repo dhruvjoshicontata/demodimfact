@@ -1257,6 +1257,10 @@
 						"Content-type": "application/json"
 					},
 					"body": {
+						"message": "@{activity().error.message}",
+						"dataFactoryName": "@{pipeline().DataFactory}",
+						"pipelineName": "@{pipeline().Pipeline}",
+						"receiver": "@{pipeline().parameters.receiver}",
 						"callBackUri": "URL",
 						"@type": "MessageCard",
 						"@context": "http://schema.org/extensions",
