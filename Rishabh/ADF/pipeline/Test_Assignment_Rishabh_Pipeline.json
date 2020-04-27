@@ -138,7 +138,8 @@
 					"body": {
 						"message": "@{activity('Copy data TestCopy').output.dataWritten}",
 						"dataFactoryName": "@{pipeline().DataFactory}",
-						"pipelineName": "@{pipeline().Pipeline}"
+						"pipelineName": "@{pipeline().Pipeline}",
+						"callBackUri": "URL"
 					},
 					"timeout": "00:10:00"
 				}
