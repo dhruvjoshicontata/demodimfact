@@ -1282,20 +1282,6 @@
 								],
 								"markdown": true
 							}
-						],
-						"potentialAction": [
-							{
-								"@type": "ActionCard",
-								"name": "Add a comment",
-								"inputs": [
-									{
-										"@type": "TextInput",
-										"id": "comment",
-										"isMultiline": false,
-										"title": "Add a comment here for this task"
-									}
-								]
-							}
 						]
 					},
 					"timeout": "00:10:00"
