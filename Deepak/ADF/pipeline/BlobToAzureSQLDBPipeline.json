@@ -1257,7 +1257,7 @@
 					"headers": {
 						"Content-Type": "application/json"
 					},
-					"body": "",
+					"body": "\"text\":\"Hello World!\"",
 					"timeout": "00:10:00"
 				}
 			}
