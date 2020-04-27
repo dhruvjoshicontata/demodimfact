@@ -1258,7 +1258,7 @@
 						"@context": "http://schema.org/extensions",
 						"themeColor": "0076D7",
 						"summary": "Rishabh Garg created a new task",
-						"sectins": [
+						"sections": [
 							{
 								"activityTitle": "Rishabh Garg Created a Webhook",
 								"activitySubtitle": "On Azure",
