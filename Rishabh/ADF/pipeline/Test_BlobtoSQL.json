@@ -1254,7 +1254,7 @@
 					"url": "https://outlook.office.com/webhook/ffb9094b-aed6-4320-8513-097793339a71@1f2b5de9-e9dd-419a-ade5-fee6c92e7f92/IncomingWebhook/f5a1316271284e31b476c47d7f826fb0/630f544c-af05-4e9d-8d63-8c0e914933e0",
 					"method": "POST",
 					"headers": {
-						"Content-type": "application\\json"
+						"Content-type": "application/json"
 					},
 					"body": {
 						"callBackUri": "URL",
