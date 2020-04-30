@@ -1,0 +1,60 @@
+{
+	"name": "JSON2Table",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_BLOB",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Container_Name": {
+				"type": "string",
+				"defaultValue": "testrishabh"
+			},
+			"Directory_Name": {
+				"type": "string",
+				"defaultValue": "json_files"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": {
+					"value": "@dataset().Directory_Name",
+					"type": "Expression"
+				},
+				"container": {
+					"value": "@dataset().Container_Name",
+					"type": "Expression"
+				}
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"clubId": {
+					"type": "integer"
+				},
+				"locationId": {
+					"type": "integer"
+				},
+				"eventId": {
+					"type": "integer"
+				},
+				"attendeeId": {
+					"type": "integer"
+				},
+				"attendeeStatus": {
+					"type": "string"
+				},
+				"beBack": {
+					"type": "boolean"
+				},
+				"visitType": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
