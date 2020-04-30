@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "pipelineJson2Table",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "PL_JSON2TABLE",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
