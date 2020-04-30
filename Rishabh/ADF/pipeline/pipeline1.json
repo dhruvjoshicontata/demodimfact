@@ -1,0 +1,122 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['clubId']"
+								},
+								"sink": {
+									"name": "clubId",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"path": "$['locationId']"
+								},
+								"sink": {
+									"name": "locationId",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"path": "$['eventId']"
+								},
+								"sink": {
+									"name": "eventId",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['attendeeId']"
+								},
+								"sink": {
+									"name": "attendeeId",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['attendeeStatus']"
+								},
+								"sink": {
+									"name": "attendeeStatus",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['beBack']"
+								},
+								"sink": {
+									"name": "beBack",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['visitType']"
+								},
+								"sink": {
+									"name": "visitType",
+									"type": "String"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "JSON2Table",
+						"type": "DatasetReference",
+						"parameters": {
+							"Container_Name": "testrishabh",
+							"Directory_Name": "json_files"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSQLjsontotable",
+						"type": "DatasetReference",
+						"parameters": {
+							"DB_NAME": "Traniee_Assignment",
+							"SERVER_NAME": "contata.database.windows.net"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
