@@ -9,10 +9,6 @@
 			"Container_Name": {
 				"type": "string",
 				"defaultValue": "testrishabh"
-			},
-			"Directory_Name": {
-				"type": "string",
-				"defaultValue": "json_files"
 			}
 		},
 		"annotations": [],
@@ -20,10 +16,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"folderPath": {
-					"value": "@dataset().Directory_Name",
-					"type": "Expression"
-				},
 				"container": {
 					"value": "@dataset().Container_Name",
 					"type": "Expression"
