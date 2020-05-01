@@ -20,7 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
 							"recursive": true,
-							"wildcardFolderPath": "json_files",
 							"wildcardFileName": "*.json",
 							"enablePartitionDiscovery": false
 						}
@@ -34,7 +33,7 @@
 						"mappings": [
 							{
 								"source": {
-									"path": "$['clubId']"
+									"path": "$['content'][0]['clubId']"
 								},
 								"sink": {
 									"name": "clubId",
@@ -43,7 +42,7 @@
 							},
 							{
 								"source": {
-									"path": "$['locationId']"
+									"path": "$['content'][0]['locationId']"
 								},
 								"sink": {
 									"name": "locationId",
@@ -52,7 +51,7 @@
 							},
 							{
 								"source": {
-									"path": "$['eventId']"
+									"path": "$['content'][0]['eventId']"
 								},
 								"sink": {
 									"name": "eventId",
@@ -61,7 +60,7 @@
 							},
 							{
 								"source": {
-									"path": "$['attendeeId']"
+									"path": "$['content'][0]['attendeeId']"
 								},
 								"sink": {
 									"name": "attendeeId",
@@ -70,7 +69,7 @@
 							},
 							{
 								"source": {
-									"path": "$['attendeeStatus']"
+									"path": "$['content'][0]['attendeeStatus']"
 								},
 								"sink": {
 									"name": "attendeeStatus",
@@ -79,7 +78,7 @@
 							},
 							{
 								"source": {
-									"path": "$['beBack']"
+									"path": "$['content'][0]['beBack']"
 								},
 								"sink": {
 									"name": "beBack",
@@ -88,14 +87,15 @@
 							},
 							{
 								"source": {
-									"path": "$['visitType']"
+									"path": "$['content'][0]['visitType']"
 								},
 								"sink": {
 									"name": "visitType",
 									"type": "String"
 								}
 							}
-						]
+						],
+						"collectionReference": ""
 					}
 				},
 				"inputs": [
@@ -103,8 +103,7 @@
 						"referenceName": "JSON2Table",
 						"type": "DatasetReference",
 						"parameters": {
-							"Container_Name": "testrishabh",
-							"Directory_Name": "json_files"
+							"Container_Name": "testrishabh"
 						}
 					}
 				],
