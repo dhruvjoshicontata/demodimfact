@@ -1,0 +1,25 @@
+{
+	"name": "test",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "X",
+					"value": "123"
+				}
+			}
+		],
+		"variables": {
+			"X": {
+				"type": "String"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2020-10-06T13:54:25Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
