@@ -20,6 +20,639 @@
 		},
 		"schema": [
 			{
+				"name": "Location ID",
+				"type": "String"
+			},
+			{
+				"name": "1 mile pop",
+				"type": "String"
+			},
+			{
+				"name": "3 mile pop",
+				"type": "String"
+			},
+			{
+				"name": "5 mile pop",
+				"type": "String"
+			},
+			{
+				"name": "Actual Opening",
+				"type": "String"
+			},
+			{
+				"name": "AverageTerm",
+				"type": "String"
+			},
+			{
+				"name": "Avg  monthly gross personal training revenue",
+				"type": "String"
+			},
+			{
+				"name": "BOE Verified",
+				"type": "String"
+			},
+			{
+				"name": "Close Date",
+				"type": "String"
+			},
+			{
+				"name": "Competition",
+				"type": "String"
+			},
+			{
+				"name": "E-mail Address",
+				"type": "String"
+			},
+			{
+				"name": "Exchange Rate",
+				"type": "String"
+			},
+			{
+				"name": "Existing Sales Rep",
+				"type": "String"
+			},
+			{
+				"name": "Express Location",
+				"type": "String"
+			},
+			{
+				"name": "Financing Type",
+				"type": "String"
+			},
+			{
+				"name": "Gross Rent",
+				"type": "String"
+			},
+			{
+				"name": "Hours of Operation",
+				"type": "String"
+			},
+			{
+				"name": "Lack of marketing",
+				"type": "String"
+			},
+			{
+				"name": "Landlord Issues",
+				"type": "String"
+			},
+			{
+				"name": "Legal Entity",
+				"type": "String"
+			},
+			{
+				"name": "Location Type",
+				"type": "String"
+			},
+			{
+				"name": "Market Type",
+				"type": "String"
+			},
+			{
+				"name": "Median income > $50000",
+				"type": "String"
+			},
+			{
+				"name": "Members  Dues and PIF",
+				"type": "String"
+			},
+			{
+				"name": "Monthly Fee Amt",
+				"type": "String"
+			},
+			{
+				"name": "Multi-Purpose Room",
+				"type": "String"
+			},
+			{
+				"name": "Multi-Purpose Sq Ft",
+				"type": "String"
+			},
+			{
+				"name": "No Operating Capital",
+				"type": "String"
+			},
+			{
+				"name": "No Sales Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Number of Rooms",
+				"type": "String"
+			},
+			{
+				"name": "Online Signup",
+				"type": "String"
+			},
+			{
+				"name": "Open Status",
+				"type": "String"
+			},
+			{
+				"name": "Open Temporary Pending Relo",
+				"type": "String"
+			},
+			{
+				"name": "Opened On",
+				"type": "String"
+			},
+			{
+				"name": "Original Franchisee Open Date",
+				"type": "String"
+			},
+			{
+				"name": "Other",
+				"type": "String"
+			},
+			{
+				"name": "Other Equipment",
+				"type": "String"
+			},
+			{
+				"name": "Other Operating System",
+				"type": "String"
+			},
+			{
+				"name": "Owner",
+				"type": "String"
+			},
+			{
+				"name": "Partnership Dispute",
+				"type": "String"
+			},
+			{
+				"name": "Payroll",
+				"type": "String"
+			},
+			{
+				"name": "Percent Owner 1",
+				"type": "String"
+			},
+			{
+				"name": "Percent Owner 2",
+				"type": "String"
+			},
+			{
+				"name": "Percent Owner 3",
+				"type": "String"
+			},
+			{
+				"name": "Percent Owner 4",
+				"type": "String"
+			},
+			{
+				"name": "Percent Owner 5",
+				"type": "String"
+			},
+			{
+				"name": "Percent Owner 6",
+				"type": "String"
+			},
+			{
+				"name": "Person  Training Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Personal Issues",
+				"type": "String"
+			},
+			{
+				"name": "Personal Training",
+				"type": "String"
+			},
+			{
+				"name": "Personal Training Revenue",
+				"type": "String"
+			},
+			{
+				"name": "Primary Contact",
+				"type": "String"
+			},
+			{
+				"name": "Principal Operator",
+				"type": "String"
+			},
+			{
+				"name": "Principal Owner",
+				"type": "String"
+			},
+			{
+				"name": "Problem %",
+				"type": "String"
+			},
+			{
+				"name": "Profit Loss",
+				"type": "String"
+			},
+			{
+				"name": "Remit Amount Last Quarter",
+				"type": "String"
+			},
+			{
+				"name": "Remit Amount Quarter Change",
+				"type": "String"
+			},
+			{
+				"name": "Sale Date",
+				"type": "String"
+			},
+			{
+				"name": "Satellite Club",
+				"type": "String"
+			},
+			{
+				"name": "Site",
+				"type": "String"
+			},
+			{
+				"name": "Stage",
+				"type": "String"
+			},
+			{
+				"name": "Team Workouts",
+				"type": "String"
+			},
+			{
+				"name": "Territory",
+				"type": "String"
+			},
+			{
+				"name": "Total Contracts",
+				"type": "String"
+			},
+			{
+				"name": "Transfer Fee",
+				"type": "String"
+			},
+			{
+				"name": "Utilities",
+				"type": "String"
+			},
+			{
+				"name": "Veteran",
+				"type": "String"
+			},
+			{
+				"name": "Virtual Coaching",
+				"type": "String"
+			},
+			{
+				"name": "Waxing Account#",
+				"type": "String"
+			},
+			{
+				"name": "Website",
+				"type": "String"
+			},
+			{
+				"name": "Active CMS",
+				"type": "String"
+			},
+			{
+				"name": "AFLP Auto Checklist",
+				"type": "String"
+			},
+			{
+				"name": "AFLP In-club Training Lead",
+				"type": "String"
+			},
+			{
+				"name": "AFLP last Post-Launch Drip email sent",
+				"type": "String"
+			},
+			{
+				"name": "AFLP Marketing",
+				"type": "String"
+			},
+			{
+				"name": "AFLP Notes",
+				"type": "String"
+			},
+			{
+				"name": "Agreement Renewal Date",
+				"type": "String"
+			},
+			{
+				"name": "Agreement Signed",
+				"type": "String"
+			},
+			{
+				"name": "Average Contract Value",
+				"type": "String"
+			},
+			{
+				"name": "Average Member Value",
+				"type": "String"
+			},
+			{
+				"name": "Billing Account Number",
+				"type": "String"
+			},
+			{
+				"name": "BOE",
+				"type": "String"
+			},
+			{
+				"name": "Brand",
+				"type": "String"
+			},
+			{
+				"name": "City",
+				"type": "String"
+			},
+			{
+				"name": "Club OS",
+				"type": "String"
+			},
+			{
+				"name": "Club Ready",
+				"type": "String"
+			},
+			{
+				"name": "Company",
+				"type": "String"
+			},
+			{
+				"name": "Country",
+				"type": "String"
+			},
+			{
+				"name": "Created On",
+				"type": "String"
+			},
+			{
+				"name": "Currency",
+				"type": "String"
+			},
+			{
+				"name": "Draft %",
+				"type": "String"
+			},
+			{
+				"name": "Dues",
+				"type": "String"
+			},
+			{
+				"name": "Exited Agreements",
+				"type": "String"
+			},
+			{
+				"name": "Latitude",
+				"type": "String"
+			},
+			{
+				"name": "Location",
+				"type": "String"
+			},
+			{
+				"name": "Location #",
+				"type": "String"
+			},
+			{
+				"name": "Longitude",
+				"type": "String"
+			},
+			{
+				"name": "Main Phone",
+				"type": "String"
+			},
+			{
+				"name": "Modified On",
+				"type": "String"
+			},
+			{
+				"name": "Monthly Attrition",
+				"type": "String"
+			},
+			{
+				"name": "NEW Agreements",
+				"type": "String"
+			},
+			{
+				"name": "PIF %",
+				"type": "String"
+			},
+			{
+				"name": "Remit Amount",
+				"type": "String"
+			},
+			{
+				"name": "Renewal Fee",
+				"type": "String"
+			},
+			{
+				"name": "Renewal Status",
+				"type": "String"
+			},
+			{
+				"name": "Rolling 12 Month Attrition",
+				"type": "String"
+			},
+			{
+				"name": "Sq Ft",
+				"type": "String"
+			},
+			{
+				"name": "State",
+				"type": "String"
+			},
+			{
+				"name": "Status",
+				"type": "String"
+			},
+			{
+				"name": "Status Reason",
+				"type": "String"
+			},
+			{
+				"name": "Time Zone",
+				"type": "String"
+			},
+			{
+				"name": "Total Rent",
+				"type": "String"
+			},
+			{
+				"name": "Website URL",
+				"type": "String"
+			},
+			{
+				"name": "ZIP Postal Code",
+				"type": "String"
+			},
+			{
+				"name": "AFLP Agreement",
+				"type": "String"
+			},
+			{
+				"name": "Current C2I",
+				"type": "String"
+			},
+			{
+				"name": "Differentiator",
+				"type": "String"
+			},
+			{
+				"name": "Temporary Closure",
+				"type": "String"
+			},
+			{
+				"name": "Closure Start Date",
+				"type": "String"
+			},
+			{
+				"name": "Closure End Date",
+				"type": "String"
+			},
+			{
+				"name": "Club OS Start Date",
+				"type": "String"
+			},
+			{
+				"name": "Alloy Billing Start date",
+				"type": "String"
+			},
+			{
+				"name": "FA Date",
+				"type": "String"
+			},
+			{
+				"name": "Address 1",
+				"type": "String"
+			},
+			{
+				"name": "Address 2",
+				"type": "String"
+			},
+			{
+				"name": "Lease Term",
+				"type": "String"
+			},
+			{
+				"name": "Lease Expiration Date",
+				"type": "String"
+			},
+			{
+				"name": "FA Exp Date",
+				"type": "String"
+			},
+			{
+				"name": "ADA",
+				"type": "String"
+			},
+			{
+				"name": "Ad Fee Start Date (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "ADA Date",
+				"type": "String"
+			},
+			{
+				"name": "Advertising % (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Base Fee % (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Cerologist Training (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Charity Fee",
+				"type": "String"
+			},
+			{
+				"name": "Charity Fee Start Date",
+				"type": "String"
+			},
+			{
+				"name": "Fee Start Date (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "General Ad Fund (AF)",
+				"type": "String"
+			},
+			{
+				"name": "General Ad Fund Start Date (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Heart First Recipient",
+				"type": "String"
+			},
+			{
+				"name": "Incentivized Income Threshold (contains a string of formulas) (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Late Fee % (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Layout Approved Date",
+				"type": "String"
+			},
+			{
+				"name": "Lease Term (Months)",
+				"type": "String"
+			},
+			{
+				"name": "Local Ad Fund Amt (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Local Ad Fund Start Date (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Minimum Royalty (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Monthly Fee Start Date (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Real Estate Status",
+				"type": "String"
+			},
+			{
+				"name": "Software Fee � Tax Rate (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Software Fee (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Software Fee Total (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Tech Fee (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Tech Fee Start Date (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Unopened Club Fee � Start Date (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Unopened Club Monthly Fee (AF)",
+				"type": "String"
+			},
+			{
+				"name": "Unopened Studio Fee (WTC)",
+				"type": "String"
+			},
+			{
+				"name": "Unopened Studio Fee Start Date (WTC)",
 				"type": "String"
 			}
 		]
