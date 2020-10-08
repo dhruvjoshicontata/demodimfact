@@ -1,0 +1,29 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "testadfprateek"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "[concat(parameters('factoryName'), '/AzureBlobStorage1')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureBlobStorage",
+				"typeProperties": {
+					"sasUri": "https://contatadev.blob.core.windows.net/testrishabh?sv=2019-02-02&st=2020-10-06T11%3A45%3A43Z&se=2020-11-07T11%3A45%3A00Z&sr=c&sp=racwdl&sig=BxVMQsoLUcfAt3kb8DfrE5JBbi6FGZS8TM1x1DVuT1Y%3D"
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
