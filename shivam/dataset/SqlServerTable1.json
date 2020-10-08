@@ -1,0 +1,533 @@
+{
+	"name": "SqlServerTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SqlServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "LocationID",
+				"type": "nvarchar"
+			},
+			{
+				"name": "1mile_pop",
+				"type": "nvarchar"
+			},
+			{
+				"name": "3mile_pop",
+				"type": "nvarchar"
+			},
+			{
+				"name": "5mile_pop",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ActualOpening",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AverageTerm",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Avg _monthly_gross_personal_training_revenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BOEVerified",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CloseDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Competition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "E-mailAddress",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExchangeRate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExistingSalesRep",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExpressLocation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FinancingType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "GrossRent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HoursofOperation",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Lackofmarketing",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LandlordIssues",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LegalEntity",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LocationType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MarketType",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Medianincome>$50000",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MembersDuesandPIF",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MonthlyFeeAmt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Multi-PurposeRoom",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Multi-PurposeSqFt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NoOperatingCapital",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NoSalesRevenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NumberofRooms",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OnlineSignup",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OpenStatus",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OpenTemporaryPendingRelo",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OpenedOn",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OriginalFranchiseeOpenDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Other",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OtherEquipment",
+				"type": "nvarchar"
+			},
+			{
+				"name": "OtherOperatingSystem",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Owner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PartnershipDispute",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Payroll",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PercentOwner1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PercentOwner2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PercentOwner3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PercentOwner4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PercentOwner5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PercentOwner6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PersonTrainingRevenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PersonalIssues",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PersonalTraining",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PersonalTrainingRevenue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PrimaryContact",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PrincipalOperator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PrincipalOwner",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Problem%",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ProfitLoss",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemitAmountLastQuarter",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemitAmountQuarterChange",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SaleDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SatelliteClub",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Site",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Stage",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TeamWorkouts",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Territory",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TotalContracts",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TransferFee",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Utilities",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Veteran",
+				"type": "nvarchar"
+			},
+			{
+				"name": "VirtualCoaching",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WaxingAccount#",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Website",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ActiveCMS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLPAutoChecklist",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLPIn-clubTrainingLead",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLPlastPost-LaunchDripemail sent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLPMarketing",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLPNotes",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AgreementRenewalDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AgreementSigned",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AverageContractValue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AverageMemberValue",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BillingAccountNumber",
+				"type": "nvarchar"
+			},
+			{
+				"name": "BOE",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Brand",
+				"type": "nvarchar"
+			},
+			{
+				"name": "City",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClubOS",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClubReady",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Company",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Country",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CreatedOn",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Currency",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Draft%",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Dues",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ExitedAgreements",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Latitude",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Location",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Location#",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Longitude",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MainPhone",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ModifiedOn",
+				"type": "nvarchar"
+			},
+			{
+				"name": "MonthlyAttrition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "NEWAgreements",
+				"type": "nvarchar"
+			},
+			{
+				"name": "PIF%",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RemitAmount",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RenewalFee",
+				"type": "nvarchar"
+			},
+			{
+				"name": "RenewalStatus",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Rolling12MonthAttrition",
+				"type": "nvarchar"
+			},
+			{
+				"name": "SqFt",
+				"type": "nvarchar"
+			},
+			{
+				"name": "State",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Status",
+				"type": "nvarchar"
+			},
+			{
+				"name": "StatusReason",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TimeZone",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TotalRent",
+				"type": "nvarchar"
+			},
+			{
+				"name": "WebsiteURL",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ZIPPostalCode",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AFLPAgreement",
+				"type": "nvarchar"
+			},
+			{
+				"name": "CurrentC2I",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Differentiator",
+				"type": "nvarchar"
+			},
+			{
+				"name": "TemporaryClosure",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClosureStartDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClosureEndDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ClubOSStartDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "AlloyBillingStartdate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FADate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Address1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Address2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LeaseTerm",
+				"type": "nvarchar"
+			},
+			{
+				"name": "LeaseExpirationDate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "FAExpDate",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "FRMLocation_Shivamv"
+		}
+	}
+}
