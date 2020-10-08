@@ -1,0 +1,1623 @@
+{
+	"name": "copy",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "SqlServerSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Location ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LocationID",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "1 mile pop",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "1mile_pop",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "3 mile pop",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "3mile_pop",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "5 mile pop",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "5mile_pop",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Actual Opening",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ActualOpening",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AverageTerm",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AverageTerm",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Avg  monthly gross personal training revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Avg _monthly_gross_personal_training_revenue",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "BOE Verified",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BOEVerified",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Close Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CloseDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Competition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Competition",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "E-mail Address",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "E-mailAddress",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Exchange Rate",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ExchangeRate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Existing Sales Rep",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ExistingSalesRep",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Express Location",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ExpressLocation",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Financing Type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FinancingType",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Gross Rent",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "GrossRent",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Hours of Operation",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "HoursofOperation",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lack of marketing",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Lackofmarketing",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Landlord Issues",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LandlordIssues",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Legal Entity",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LegalEntity",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Location Type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LocationType",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Market Type",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MarketType",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Median income > $50000",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Medianincome>$50000",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Members  Dues and PIF",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MembersDuesandPIF",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Fee Amt",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MonthlyFeeAmt",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Multi-Purpose Room",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Multi-PurposeRoom",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Multi-Purpose Sq Ft",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Multi-PurposeSqFt",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No Operating Capital",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NoOperatingCapital",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "No Sales Revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NoSalesRevenue",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Number of Rooms",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NumberofRooms",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Online Signup",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OnlineSignup",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Open Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OpenStatus",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Open Temporary Pending Relo",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OpenTemporaryPendingRelo",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Opened On",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OpenedOn",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Original Franchisee Open Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OriginalFranchiseeOpenDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Other",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Other",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Other Equipment",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OtherEquipment",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Other Operating System",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "OtherOperatingSystem",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Owner",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Owner",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Partnership Dispute",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PartnershipDispute",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Payroll",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Payroll",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOwner1",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOwner2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 3",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOwner3",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 4",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOwner4",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 5",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOwner5",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 6",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PercentOwner6",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Person  Training Revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PersonTrainingRevenue",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Issues",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PersonalIssues",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Training",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PersonalTraining",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Training Revenue",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PersonalTrainingRevenue",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Primary Contact",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrimaryContact",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Principal Operator",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrincipalOperator",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Principal Owner",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PrincipalOwner",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Problem %",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Problem%",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Profit Loss",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ProfitLoss",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount Last Quarter",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RemitAmountLastQuarter",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount Quarter Change",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RemitAmountQuarterChange",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Sale Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SaleDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Satellite Club",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SatelliteClub",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Site",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Site",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Stage",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Stage",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Team Workouts",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TeamWorkouts",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Territory",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Territory",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Total Contracts",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalContracts",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Transfer Fee",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TransferFee",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Utilities",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Utilities",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Veteran",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Veteran",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Virtual Coaching",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "VirtualCoaching",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Waxing Account#",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WaxingAccount#",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Website",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Website",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Active CMS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ActiveCMS",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Auto Checklist",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AFLPAutoChecklist",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP In-club Training Lead",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AFLPIn-clubTrainingLead",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP last Post-Launch Drip email sent",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AFLPlastPost-LaunchDripemail sent",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Marketing",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AFLPMarketing",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Notes",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AFLPNotes",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Agreement Renewal Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AgreementRenewalDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Agreement Signed",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AgreementSigned",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Average Contract Value",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AverageContractValue",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Average Member Value",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AverageMemberValue",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Billing Account Number",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BillingAccountNumber",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "BOE",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "BOE",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Brand",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Brand",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "City",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "City",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Club OS",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ClubOS",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Club Ready",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ClubReady",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Company",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Company",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Country",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Created On",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CreatedOn",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Currency",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Currency",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Draft %",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Draft%",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Dues",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Dues",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Exited Agreements",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ExitedAgreements",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Latitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Latitude",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Location",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Location",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Location #",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Location#",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Longitude",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Longitude",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Main Phone",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MainPhone",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Modified On",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ModifiedOn",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Attrition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "MonthlyAttrition",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "NEW Agreements",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "NEWAgreements",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "PIF %",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "PIF%",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RemitAmount",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Renewal Fee",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RenewalFee",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Renewal Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "RenewalStatus",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Rolling 12 Month Attrition",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Rolling12MonthAttrition",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Sq Ft",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "SqFt",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "State",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "State",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Status",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Status Reason",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "StatusReason",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Time Zone",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TimeZone",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Total Rent",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TotalRent",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Website URL",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "WebsiteURL",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ZIP Postal Code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ZIPPostalCode",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Agreement",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AFLPAgreement",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Current C2I",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "CurrentC2I",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Differentiator",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Differentiator",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Temporary Closure",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "TemporaryClosure",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Closure Start Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ClosureStartDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Closure End Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ClosureEndDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Club OS Start Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ClubOSStartDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Alloy Billing Start date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "AlloyBillingStartdate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "FA Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FADate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Address 1",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Address1",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Address 2",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Address2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lease Term",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LeaseTerm",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lease Expiration Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "LeaseExpirationDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "FA Exp Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "FAExpDate",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "CopyActivity",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "SqlServerTable1",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Copy data2",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
+			}
+		],
+		"annotations": []
+	}
+}
