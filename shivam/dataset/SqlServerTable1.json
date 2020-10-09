@@ -9,525 +9,517 @@
 		"type": "SqlServerTable",
 		"schema": [
 			{
-				"name": "\"Location ID\"",
+				"name": "LocationID",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"1 mile pop\"",
+				"name": "1mile_pop",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"3 mile pop\"",
+				"name": "3mile_pop",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"5 mile pop\"",
+				"name": "5mile_pop",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Actual Opening\"",
+				"name": "ActualOpening",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"AverageTerm\"",
+				"name": "AverageTerm",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Avg  monthly gross personal training revenue\"",
+				"name": "Avg_monthly_gross_personal_training_revenue",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"BOE Verified\"",
+				"name": "BOEVerified",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Close Date\"",
+				"name": "CloseDate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Competition\"",
+				"name": "Competition",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"E-mail Address\"",
+				"name": "E-mailAddress",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Exchange Rate\"",
+				"name": "ExchangeRate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Existing Sales Rep\"",
+				"name": "ExistingSalesRep",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Express Location\"",
+				"name": "ExpressLocation",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Financing Type\"",
+				"name": "FinancingType",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Gross Rent\"",
+				"name": "GrossRent",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Hours of Operation\"",
+				"name": "HoursofOperation",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Lack of marketing\"",
+				"name": "Lackofmarketing",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Landlord Issues\"",
+				"name": "LandlordIssues",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Legal Entity\"",
+				"name": "LegalEntity",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Location Type\"",
+				"name": "LocationType",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Market Type\"",
+				"name": "MarketType",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Median income > $50000\"",
+				"name": "Medianincome>$50000",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Members  Dues and PIF\"",
+				"name": "MembersDuesandPIF",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Monthly Fee Amt\"",
+				"name": "MonthlyFeeAmt",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Multi-Purpose Room\"",
+				"name": "Multi-PurposeRoom",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Multi-Purpose Sq Ft\"",
+				"name": "Multi-PurposeSqFt",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"No Operating Capital\"",
+				"name": "NoOperatingCapital",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"No Sales Revenue\"",
+				"name": "NoSalesRevenue",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Number of Rooms\"",
+				"name": "NumberofRooms",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Online Signup\"",
+				"name": "OnlineSignup",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Open Status\"",
+				"name": "OpenStatus",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Open Temporary Pending Relo\"",
+				"name": "OpenTemporaryPendingRelo",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Opened On\"",
+				"name": "OpenedOn",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Original Franchisee Open Date\"",
+				"name": "OriginalFranchiseeOpenDate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Other\"",
+				"name": "Other",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Other Equipment\"",
+				"name": "OtherEquipment",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Other Operating System\"",
+				"name": "OtherOperatingSystem",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Owner\"",
+				"name": "Owner",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Partnership Dispute\"",
+				"name": "PartnershipDispute",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Payroll\"",
+				"name": "Payroll",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Percent Owner 1\"",
+				"name": "PercentOwner1",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Percent Owner 2\"",
+				"name": "PercentOwner2",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Percent Owner 3\"",
+				"name": "PercentOwner3",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Percent Owner 4\"",
+				"name": "PercentOwner4",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Percent Owner 5\"",
+				"name": "PercentOwner5",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Percent Owner 6\"",
+				"name": "PercentOwner6",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Person  Training Revenue\"",
+				"name": "PersonTrainingRevenue",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Personal Issues\"",
+				"name": "PersonalIssues",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Personal Training\"",
+				"name": "PersonalTraining",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Personal Training Revenue\"",
+				"name": "PersonalTrainingRevenue",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Primary Contact\"",
+				"name": "PrimaryContact",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Principal Operator\"",
+				"name": "PrincipalOperator",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Principal Owner\"",
+				"name": "PrincipalOwner",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Problem %\"",
+				"name": "Problem%",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Profit Loss\"",
+				"name": "ProfitLoss",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Remit Amount Last Quarter\"",
+				"name": "RemitAmountLastQuarter",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Remit Amount Quarter Change\"",
+				"name": "RemitAmountQuarterChange",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Sale Date\"",
+				"name": "SaleDate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Satellite Club\"",
+				"name": "SatelliteClub",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Site\"",
+				"name": "Site",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Stage\"",
+				"name": "Stage",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Team Workouts\"",
+				"name": "TeamWorkouts",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Territory\"",
+				"name": "Territory",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Total Contracts\"",
+				"name": "TotalContracts",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Transfer Fee\"",
+				"name": "TransferFee",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Utilities\"",
+				"name": "Utilities",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Veteran\"",
+				"name": "Veteran",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Virtual Coaching\"",
+				"name": "VirtualCoaching",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Waxing Account#\"",
+				"name": "WaxingAccount#",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Website\"",
+				"name": "Website",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Active CMS\"",
+				"name": "ActiveCMS",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"AFLP Auto Checklist\"",
+				"name": "AFLPAutoChecklist",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"AFLP In-club Training Lead\"",
+				"name": "AFLPIn-clubTrainingLead",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"AFLP last Post-Launch Drip email sent\"",
+				"name": "AFLPlastPost-LaunchDripemailsent",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"AFLP Marketing\"",
+				"name": "AFLPMarketing",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"AFLP Notes\"",
+				"name": "AFLPNotes",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Agreement Renewal Date\"",
+				"name": "AgreementRenewalDate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Agreement Signed\"",
+				"name": "AgreementSigned",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Average Contract Value\"",
+				"name": "AverageContractValue",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Average Member Value\"",
+				"name": "AverageMemberValue",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Billing Account Number\"",
+				"name": "BillingAccountNumber",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"BOE\"",
+				"name": "BOE",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Brand\"",
+				"name": "Brand",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"City\"",
+				"name": "City",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Club OS\"",
+				"name": "ClubOS",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Club Ready\"",
+				"name": "ClubReady",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Company\"",
+				"name": "Company",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Country\"",
+				"name": "Country",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Created On\"",
+				"name": "CreatedOn",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Currency\"",
+				"name": "Currency",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Draft %\"",
+				"name": "Draft%",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Dues\"",
+				"name": "Dues",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Exited Agreements\"",
+				"name": "ExitedAgreements",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Latitude\"",
+				"name": "Latitude",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Location\"",
+				"name": "Location",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Location #\"",
+				"name": "Location#",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Longitude\"",
+				"name": "Longitude",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Main Phone\"",
+				"name": "MainPhone",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Modified On\"",
+				"name": "ModifiedOn",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Monthly Attrition\"",
+				"name": "MonthlyAttrition",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"NEW Agreements\"",
+				"name": "NEWAgreements",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"PIF %\"",
+				"name": "PIF%",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Remit Amount\"",
+				"name": "RemitAmount",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Renewal Fee\"",
+				"name": "RenewalFee",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Renewal Status\"",
+				"name": "RenewalStatus",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Rolling 12 Month Attrition\"",
+				"name": "Rolling12MonthAttrition",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Sq Ft\"",
+				"name": "SqFt",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"State\"",
+				"name": "State",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Status\"",
+				"name": "Status",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Status Reason\"",
+				"name": "StatusReason",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Time Zone\"",
+				"name": "TimeZone",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Total Rent\"",
+				"name": "TotalRent",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Website URL\"",
+				"name": "WebsiteURL",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"ZIP Postal Code\"",
+				"name": "ZIPPostalCode",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"AFLP Agreement\"",
+				"name": "AFLPAgreement",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Current C2I\"",
+				"name": "CurrentC2I",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Differentiator\"",
+				"name": "Differentiator",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Temporary Closure\"",
+				"name": "TemporaryClosure",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Closure Start Date\"",
+				"name": "ClosureStartDate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Closure End Date\"",
+				"name": "ClosureEndDate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Club OS Start Date\"",
+				"name": "ClubOSStartDate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Alloy Billing Start date\"",
+				"name": "AlloyBillingStartdate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"FA Date\"",
+				"name": "FADate",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Address 1\"",
+				"name": "Address1",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Address 2\"",
+				"name": "Address2",
 				"type": "nvarchar"
 			},
 			{
-				"name": "\"Lease Term\"",
-				"type": "nvarchar"
-			},
-			{
-				"name": "\"Lease Expiration Date\"",
-				"type": "nvarchar"
-			},
-			{
-				"name": "\"FA Exp Date\"",
+				"name": "LeaseTerm",
 				"type": "nvarchar"
 			}
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "FRMLocation_Shivam_Raw"
+			"table": "FRMLShivam_Raw"
 		}
 	}
 }
