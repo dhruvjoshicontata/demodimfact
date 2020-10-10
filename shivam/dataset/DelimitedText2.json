@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "FRMLocation.csv",
+				"fileName": "FRMLocation2.csv",
 				"folderPath": "drop",
 				"container": "testrishabh"
 			},
@@ -21,639 +21,639 @@
 		},
 		"schema": [
 			{
-				"name": "\"Location ID\"",
+				"name": "Location ID",
 				"type": "String"
 			},
 			{
-				"name": "\"1 mile pop\"",
+				"name": "1 mile pop",
 				"type": "String"
 			},
 			{
-				"name": "\"3 mile pop\"",
+				"name": "3 mile pop",
 				"type": "String"
 			},
 			{
-				"name": "\"5 mile pop\"",
+				"name": "5 mile pop",
 				"type": "String"
 			},
 			{
-				"name": "\"Actual Opening\"",
+				"name": "Actual Opening",
 				"type": "String"
 			},
 			{
-				"name": "\"AverageTerm\"",
+				"name": "AverageTerm",
 				"type": "String"
 			},
 			{
-				"name": "\"Avg  monthly gross personal training revenue\"",
+				"name": "Avg  monthly gross personal training revenue",
 				"type": "String"
 			},
 			{
-				"name": "\"BOE Verified\"",
+				"name": "BOE Verified",
 				"type": "String"
 			},
 			{
-				"name": "\"Close Date\"",
+				"name": "Close Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Competition\"",
+				"name": "Competition",
 				"type": "String"
 			},
 			{
-				"name": "\"E-mail Address\"",
+				"name": "E-mail Address",
 				"type": "String"
 			},
 			{
-				"name": "\"Exchange Rate\"",
+				"name": "Exchange Rate",
 				"type": "String"
 			},
 			{
-				"name": "\"Existing Sales Rep\"",
+				"name": "Existing Sales Rep",
 				"type": "String"
 			},
 			{
-				"name": "\"Express Location\"",
+				"name": "Express Location",
 				"type": "String"
 			},
 			{
-				"name": "\"Financing Type\"",
+				"name": "Financing Type",
 				"type": "String"
 			},
 			{
-				"name": "\"Gross Rent\"",
+				"name": "Gross Rent",
 				"type": "String"
 			},
 			{
-				"name": "\"Hours of Operation\"",
+				"name": "Hours of Operation",
 				"type": "String"
 			},
 			{
-				"name": "\"Lack of marketing\"",
+				"name": "Lack of marketing",
 				"type": "String"
 			},
 			{
-				"name": "\"Landlord Issues\"",
+				"name": "Landlord Issues",
 				"type": "String"
 			},
 			{
-				"name": "\"Legal Entity\"",
+				"name": "Legal Entity",
 				"type": "String"
 			},
 			{
-				"name": "\"Location Type\"",
+				"name": "Location Type",
 				"type": "String"
 			},
 			{
-				"name": "\"Market Type\"",
+				"name": "Market Type",
 				"type": "String"
 			},
 			{
-				"name": "\"Median income > $50000\"",
+				"name": "Median income > 50000",
 				"type": "String"
 			},
 			{
-				"name": "\"Members  Dues and PIF\"",
+				"name": "Members  Dues and PIF",
 				"type": "String"
 			},
 			{
-				"name": "\"Monthly Fee Amt\"",
+				"name": "Monthly Fee Amt",
 				"type": "String"
 			},
 			{
-				"name": "\"Multi-Purpose Room\"",
+				"name": "Multi-Purpose Room",
 				"type": "String"
 			},
 			{
-				"name": "\"Multi-Purpose Sq Ft\"",
+				"name": "Multi-Purpose Sq Ft",
 				"type": "String"
 			},
 			{
-				"name": "\"No Operating Capital\"",
+				"name": "No Operating Capital",
 				"type": "String"
 			},
 			{
-				"name": "\"No Sales Revenue\"",
+				"name": "No Sales Revenue",
 				"type": "String"
 			},
 			{
-				"name": "\"Number of Rooms\"",
+				"name": "Number of Rooms",
 				"type": "String"
 			},
 			{
-				"name": "\"Online Signup\"",
+				"name": "Online Signup",
 				"type": "String"
 			},
 			{
-				"name": "\"Open Status\"",
+				"name": "Open Status",
 				"type": "String"
 			},
 			{
-				"name": "\"Open Temporary Pending Relo\"",
+				"name": "Open Temporary Pending Relo",
 				"type": "String"
 			},
 			{
-				"name": "\"Opened On\"",
+				"name": "Opened On",
 				"type": "String"
 			},
 			{
-				"name": "\"Original Franchisee Open Date\"",
+				"name": "Original Franchisee Open Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Other\"",
+				"name": "Other",
 				"type": "String"
 			},
 			{
-				"name": "\"Other Equipment\"",
+				"name": "Other Equipment",
 				"type": "String"
 			},
 			{
-				"name": "\"Other Operating System\"",
+				"name": "Other Operating System",
 				"type": "String"
 			},
 			{
-				"name": "\"Owner\"",
+				"name": "Owner",
 				"type": "String"
 			},
 			{
-				"name": "\"Partnership Dispute\"",
+				"name": "Partnership Dispute",
 				"type": "String"
 			},
 			{
-				"name": "\"Payroll\"",
+				"name": "Payroll",
 				"type": "String"
 			},
 			{
-				"name": "\"Percent Owner 1\"",
+				"name": "Percent Owner 1",
 				"type": "String"
 			},
 			{
-				"name": "\"Percent Owner 2\"",
+				"name": "Percent Owner 2",
 				"type": "String"
 			},
 			{
-				"name": "\"Percent Owner 3\"",
+				"name": "Percent Owner 3",
 				"type": "String"
 			},
 			{
-				"name": "\"Percent Owner 4\"",
+				"name": "Percent Owner 4",
 				"type": "String"
 			},
 			{
-				"name": "\"Percent Owner 5\"",
+				"name": "Percent Owner 5",
 				"type": "String"
 			},
 			{
-				"name": "\"Percent Owner 6\"",
+				"name": "Percent Owner 6",
 				"type": "String"
 			},
 			{
-				"name": "\"Person  Training Revenue\"",
+				"name": "Person  Training Revenue",
 				"type": "String"
 			},
 			{
-				"name": "\"Personal Issues\"",
+				"name": "Personal Issues",
 				"type": "String"
 			},
 			{
-				"name": "\"Personal Training\"",
+				"name": "Personal Training",
 				"type": "String"
 			},
 			{
-				"name": "\"Personal Training Revenue\"",
+				"name": "Personal Training Revenue",
 				"type": "String"
 			},
 			{
-				"name": "\"Primary Contact\"",
+				"name": "Primary Contact",
 				"type": "String"
 			},
 			{
-				"name": "\"Principal Operator\"",
+				"name": "Principal Operator",
 				"type": "String"
 			},
 			{
-				"name": "\"Principal Owner\"",
+				"name": "Principal Owner",
 				"type": "String"
 			},
 			{
-				"name": "\"Problem %\"",
+				"name": "Problem %",
 				"type": "String"
 			},
 			{
-				"name": "\"Profit Loss\"",
+				"name": "Profit Loss",
 				"type": "String"
 			},
 			{
-				"name": "\"Remit Amount Last Quarter\"",
+				"name": "Remit Amount Last Quarter",
 				"type": "String"
 			},
 			{
-				"name": "\"Remit Amount Quarter Change\"",
+				"name": "Remit Amount Quarter Change",
 				"type": "String"
 			},
 			{
-				"name": "\"Sale Date\"",
+				"name": "Sale Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Satellite Club\"",
+				"name": "Satellite Club",
 				"type": "String"
 			},
 			{
-				"name": "\"Site\"",
+				"name": "Site",
 				"type": "String"
 			},
 			{
-				"name": "\"Stage\"",
+				"name": "Stage",
 				"type": "String"
 			},
 			{
-				"name": "\"Team Workouts\"",
+				"name": "Team Workouts",
 				"type": "String"
 			},
 			{
-				"name": "\"Territory\"",
+				"name": "Territory",
 				"type": "String"
 			},
 			{
-				"name": "\"Total Contracts\"",
+				"name": "Total Contracts",
 				"type": "String"
 			},
 			{
-				"name": "\"Transfer Fee\"",
+				"name": "Transfer Fee",
 				"type": "String"
 			},
 			{
-				"name": "\"Utilities\"",
+				"name": "Utilities",
 				"type": "String"
 			},
 			{
-				"name": "\"Veteran\"",
+				"name": "Veteran",
 				"type": "String"
 			},
 			{
-				"name": "\"Virtual Coaching\"",
+				"name": "Virtual Coaching",
 				"type": "String"
 			},
 			{
-				"name": "\"Waxing Account#\"",
+				"name": "Waxing Account#",
 				"type": "String"
 			},
 			{
-				"name": "\"Website\"",
+				"name": "Website",
 				"type": "String"
 			},
 			{
-				"name": "\"Active CMS\"",
+				"name": "Active CMS",
 				"type": "String"
 			},
 			{
-				"name": "\"AFLP Auto Checklist\"",
+				"name": "AFLP Auto Checklist",
 				"type": "String"
 			},
 			{
-				"name": "\"AFLP In-club Training Lead\"",
+				"name": "AFLP In-club Training Lead",
 				"type": "String"
 			},
 			{
-				"name": "\"AFLP last Post-Launch Drip email sent\"",
+				"name": "AFLP last Post-Launch Drip email sent",
 				"type": "String"
 			},
 			{
-				"name": "\"AFLP Marketing\"",
+				"name": "AFLP Marketing",
 				"type": "String"
 			},
 			{
-				"name": "\"AFLP Notes\"",
+				"name": "AFLP Notes",
 				"type": "String"
 			},
 			{
-				"name": "\"Agreement Renewal Date\"",
+				"name": "Agreement Renewal Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Agreement Signed\"",
+				"name": "Agreement Signed",
 				"type": "String"
 			},
 			{
-				"name": "\"Average Contract Value\"",
+				"name": "Average Contract Value",
 				"type": "String"
 			},
 			{
-				"name": "\"Average Member Value\"",
+				"name": "Average Member Value",
 				"type": "String"
 			},
 			{
-				"name": "\"Billing Account Number\"",
+				"name": "Billing Account Number",
 				"type": "String"
 			},
 			{
-				"name": "\"BOE\"",
+				"name": "BOE",
 				"type": "String"
 			},
 			{
-				"name": "\"Brand\"",
+				"name": "Brand",
 				"type": "String"
 			},
 			{
-				"name": "\"City\"",
+				"name": "City",
 				"type": "String"
 			},
 			{
-				"name": "\"Club OS\"",
+				"name": "Club OS",
 				"type": "String"
 			},
 			{
-				"name": "\"Club Ready\"",
+				"name": "Club Ready",
 				"type": "String"
 			},
 			{
-				"name": "\"Company\"",
+				"name": "Company",
 				"type": "String"
 			},
 			{
-				"name": "\"Country\"",
+				"name": "Country",
 				"type": "String"
 			},
 			{
-				"name": "\"Created On\"",
+				"name": "Created On",
 				"type": "String"
 			},
 			{
-				"name": "\"Currency\"",
+				"name": "Currency",
 				"type": "String"
 			},
 			{
-				"name": "\"Draft %\"",
+				"name": "Draft %",
 				"type": "String"
 			},
 			{
-				"name": "\"Dues\"",
+				"name": "Dues",
 				"type": "String"
 			},
 			{
-				"name": "\"Exited Agreements\"",
+				"name": "Exited Agreements",
 				"type": "String"
 			},
 			{
-				"name": "\"Latitude\"",
+				"name": "Latitude",
 				"type": "String"
 			},
 			{
-				"name": "\"Location\"",
+				"name": "Location",
 				"type": "String"
 			},
 			{
-				"name": "\"Location #\"",
+				"name": "Location #",
 				"type": "String"
 			},
 			{
-				"name": "\"Longitude\"",
+				"name": "Longitude",
 				"type": "String"
 			},
 			{
-				"name": "\"Main Phone\"",
+				"name": "Main Phone",
 				"type": "String"
 			},
 			{
-				"name": "\"Modified On\"",
+				"name": "Modified On",
 				"type": "String"
 			},
 			{
-				"name": "\"Monthly Attrition\"",
+				"name": "Monthly Attrition",
 				"type": "String"
 			},
 			{
-				"name": "\"NEW Agreements\"",
+				"name": "NEW Agreements",
 				"type": "String"
 			},
 			{
-				"name": "\"PIF %\"",
+				"name": "PIF %",
 				"type": "String"
 			},
 			{
-				"name": "\"Remit Amount\"",
+				"name": "Remit Amount",
 				"type": "String"
 			},
 			{
-				"name": "\"Renewal Fee\"",
+				"name": "Renewal Fee",
 				"type": "String"
 			},
 			{
-				"name": "\"Renewal Status\"",
+				"name": "Renewal Status",
 				"type": "String"
 			},
 			{
-				"name": "\"Rolling 12 Month Attrition\"",
+				"name": "Rolling 12 Month Attrition",
 				"type": "String"
 			},
 			{
-				"name": "\"Sq Ft\"",
+				"name": "Sq Ft",
 				"type": "String"
 			},
 			{
-				"name": "\"State\"",
+				"name": "State",
 				"type": "String"
 			},
 			{
-				"name": "\"Status\"",
+				"name": "Status",
 				"type": "String"
 			},
 			{
-				"name": "\"Status Reason\"",
+				"name": "Status Reason",
 				"type": "String"
 			},
 			{
-				"name": "\"Time Zone\"",
+				"name": "Time Zone",
 				"type": "String"
 			},
 			{
-				"name": "\"Total Rent\"",
+				"name": "Total Rent",
 				"type": "String"
 			},
 			{
-				"name": "\"Website URL\"",
+				"name": "Website URL",
 				"type": "String"
 			},
 			{
-				"name": "\"ZIP Postal Code\"",
+				"name": "ZIP Postal Code",
 				"type": "String"
 			},
 			{
-				"name": "\"AFLP Agreement\"",
+				"name": "AFLP Agreement",
 				"type": "String"
 			},
 			{
-				"name": "\"Current C2I\"",
+				"name": "Current C2I",
 				"type": "String"
 			},
 			{
-				"name": "\"Differentiator\"",
+				"name": "Differentiator",
 				"type": "String"
 			},
 			{
-				"name": "\"Temporary Closure\"",
+				"name": "Temporary Closure",
 				"type": "String"
 			},
 			{
-				"name": "\"Closure Start Date\"",
+				"name": "Closure Start Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Closure End Date\"",
+				"name": "Closure End Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Club OS Start Date\"",
+				"name": "Club OS Start Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Alloy Billing Start date\"",
+				"name": "Alloy Billing Start date",
 				"type": "String"
 			},
 			{
-				"name": "\"FA Date\"",
+				"name": "FA Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Address 1\"",
+				"name": "Address 1",
 				"type": "String"
 			},
 			{
-				"name": "\"Address 2\"",
+				"name": "Address 2",
 				"type": "String"
 			},
 			{
-				"name": "\"Lease Term\"",
+				"name": "Lease Term",
 				"type": "String"
 			},
 			{
-				"name": "\"Lease Expiration Date\"",
+				"name": "Lease Expiration Date",
 				"type": "String"
 			},
 			{
-				"name": "\"FA Exp Date\"",
+				"name": "FA Exp Date",
 				"type": "String"
 			},
 			{
-				"name": "\"ADA\"",
+				"name": "ADA",
 				"type": "String"
 			},
 			{
-				"name": "\"Ad Fee Start Date (WTC)\"",
+				"name": "Ad Fee Start Date (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"ADA Date\"",
+				"name": "ADA Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Advertising % (WTC)\"",
+				"name": "Advertising % (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Base Fee % (WTC)\"",
+				"name": "Base Fee % (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Cerologist Training (WTC)\"",
+				"name": "Cerologist Training (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Charity Fee\"",
+				"name": "Charity Fee",
 				"type": "String"
 			},
 			{
-				"name": "\"Charity Fee Start Date\"",
+				"name": "Charity Fee Start Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Fee Start Date (WTC)\"",
+				"name": "Fee Start Date (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"General Ad Fund (AF)\"",
+				"name": "General Ad Fund (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"General Ad Fund Start Date (AF)\"",
+				"name": "General Ad Fund Start Date (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Heart First Recipient\"",
+				"name": "Heart First Recipient",
 				"type": "String"
 			},
 			{
-				"name": "\"Incentivized Income Threshold (contains a string of formulas) (WTC)\"",
+				"name": "Incentivized Income Threshold (contains a string of formulas) (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Late Fee % (WTC)\"",
+				"name": "Late Fee % (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Layout Approved Date\"",
+				"name": "Layout Approved Date",
 				"type": "String"
 			},
 			{
-				"name": "\"Lease Term (Months)\"",
+				"name": "Lease Term (Months)",
 				"type": "String"
 			},
 			{
-				"name": "\"Local Ad Fund Amt (AF)\"",
+				"name": "Local Ad Fund Amt (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Local Ad Fund Start Date (AF)\"",
+				"name": "Local Ad Fund Start Date (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Minimum Royalty (WTC)\"",
+				"name": "Minimum Royalty (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Monthly Fee Start Date (AF)\"",
+				"name": "Monthly Fee Start Date (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Real Estate Status\"",
+				"name": "Real Estate Status",
 				"type": "String"
 			},
 			{
-				"name": "\"Software Fee � Tax Rate (AF)\"",
+				"name": "Software Fee � Tax Rate (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Software Fee (AF)\"",
+				"name": "Software Fee (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Software Fee Total (AF)\"",
+				"name": "Software Fee Total (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Tech Fee (WTC)\"",
+				"name": "Tech Fee (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Tech Fee Start Date (WTC)\"",
+				"name": "Tech Fee Start Date (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Unopened Club Fee � Start Date (AF)\"",
+				"name": "Unopened Club Fee � Start Date (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Unopened Club Monthly Fee (AF)\"",
+				"name": "Unopened Club Monthly Fee (AF)",
 				"type": "String"
 			},
 			{
-				"name": "\"Unopened Studio Fee (WTC)\"",
+				"name": "Unopened Studio Fee (WTC)",
 				"type": "String"
 			},
 			{
-				"name": "\"Unopened Studio Fee Start Date (WTC)\"",
+				"name": "Unopened Studio Fee Start Date (WTC)",
 				"type": "String"
 			}
 		]
