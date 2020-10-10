@@ -519,7 +519,7 @@
 		],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "DataTable"
+			"table": "FRMLShivam_Raw"
 		}
 	}
 }
