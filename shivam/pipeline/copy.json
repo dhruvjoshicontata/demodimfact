@@ -51,7 +51,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "1mile_pop",
+									"name": "mile_pop1",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -63,7 +63,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "3mile_pop",
+									"name": "mile_pop3",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -75,7 +75,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "5mile_pop",
+									"name": "mile_pop5",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -111,7 +111,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Avg _monthly_gross_personal_training_revenue",
+									"name": "Avg_monthly_gross_personal_training_revenue",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -159,7 +159,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "E-mailAddress",
+									"name": "EmailAddress",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -298,12 +298,12 @@
 							},
 							{
 								"source": {
-									"name": "Median income > $50000",
+									"name": "Median income > 50000",
 									"type": "String",
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Medianincome>$50000",
+									"name": "Medianincome",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -339,7 +339,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Multi-PurposeRoom",
+									"name": "MultiPurposeRoom",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -351,7 +351,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Multi-PurposeSqFt",
+									"name": "MultiPurposeSqFt",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -687,7 +687,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Problem%",
+									"name": "Problem",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -915,7 +915,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPIn-clubTrainingLead",
+									"name": "AFLPInclubTrainingLead",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -927,7 +927,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPlastPost-LaunchDripemail sent",
+									"name": "AFLPlastPostLaunchDripemailsent",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1131,7 +1131,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Draft%",
+									"name": "Draft",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1263,7 +1263,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PIF%",
+									"name": "PIF",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1567,18 +1567,6 @@
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
-							},
-							{
-								"source": {
-									"name": "FA Exp Date",
-									"type": "String",
-									"physicalType": "String"
-								},
-								"sink": {
-									"name": "FAExpDate",
-									"type": "String",
-									"physicalType": "nvarchar"
-								}
 							}
 						],
 						"typeConversion": true,
@@ -1590,7 +1578,7 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "CopyActivity",
+						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					}
 				],
@@ -1600,22 +1588,6 @@
 						"type": "DatasetReference"
 					}
 				]
-			},
-			{
-				"name": "Copy data2",
-				"type": "Copy",
-				"dependsOn": [],
-				"policy": {
-					"timeout": "7.00:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"enableStaging": false
-				}
 			}
 		],
 		"annotations": []
