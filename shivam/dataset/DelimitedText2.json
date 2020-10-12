@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "FRMLocation2.csv",
+				"fileName": "FRMLocationFinal.csv",
 				"folderPath": "drop",
 				"container": "testrishabh"
 			},
