@@ -13,7 +13,7 @@
 				"folderPath": "drop",
 				"container": "testrishabh"
 			},
-			"columnDelimiter": "|",
+			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
