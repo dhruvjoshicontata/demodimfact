@@ -19,7 +19,9 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true
+							"recursive": true,
+							"wildcardFolderPath": "drop",
+							"wildcardFileName": "FRML*"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -298,7 +300,7 @@
 							},
 							{
 								"source": {
-									"name": "Median income > 50000",
+									"name": "Median income > $50000",
 									"type": "String",
 									"physicalType": "String"
 								},
@@ -1981,7 +1983,7 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[FRMLShivam_Final]"
+					"storedProcedureName": "FRMLShivam_Final"
 				},
 				"linkedServiceName": {
 					"referenceName": "SqlServer1",
@@ -2012,7 +2014,9 @@
 						"type": "DelimitedTextSource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true
+							"recursive": true,
+							"wildcardFolderPath": "drop",
+							"wildcardFileName": "FRML*"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextReadSettings"
@@ -2255,7 +2259,7 @@
 							},
 							{
 								"source": {
-									"name": "Median income > 50000",
+									"name": "Median income > $50000",
 									"type": "String"
 								},
 								"sink": {
@@ -3663,14 +3667,7 @@
 						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					},
-					"logStorageSettings": {
-						"linkedServiceName": {
-							"referenceName": "DropToArchive",
-							"type": "LinkedServiceReference"
-						},
-						"path": "testrishabh"
-					},
-					"enableLogging": true,
+					"enableLogging": false,
 					"storeSettings": {
 						"type": "AzureBlobStorageReadSettings",
 						"recursive": true
