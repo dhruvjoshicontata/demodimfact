@@ -2018,14 +2018,1664 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"enableStaging": false
+					"sink": {
+						"type": "DelimitedTextSink",
+						"storeSettings": {
+							"type": "AzureBlobStorageWriteSettings"
+						},
+						"formatSettings": {
+							"type": "DelimitedTextWriteSettings",
+							"quoteAllText": true,
+							"fileExtension": ".txt"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "Location ID",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 1
+								}
+							},
+							{
+								"source": {
+									"name": "1 mile pop",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 2
+								}
+							},
+							{
+								"source": {
+									"name": "3 mile pop",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 3
+								}
+							},
+							{
+								"source": {
+									"name": "5 mile pop",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 4
+								}
+							},
+							{
+								"source": {
+									"name": "Actual Opening",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 5
+								}
+							},
+							{
+								"source": {
+									"name": "AverageTerm",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 6
+								}
+							},
+							{
+								"source": {
+									"name": "Avg  monthly gross personal training revenue",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 7
+								}
+							},
+							{
+								"source": {
+									"name": "BOE Verified",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 8
+								}
+							},
+							{
+								"source": {
+									"name": "Close Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 9
+								}
+							},
+							{
+								"source": {
+									"name": "Competition",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 10
+								}
+							},
+							{
+								"source": {
+									"name": "E-mail Address",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 11
+								}
+							},
+							{
+								"source": {
+									"name": "Exchange Rate",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 12
+								}
+							},
+							{
+								"source": {
+									"name": "Existing Sales Rep",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 13
+								}
+							},
+							{
+								"source": {
+									"name": "Express Location",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 14
+								}
+							},
+							{
+								"source": {
+									"name": "Financing Type",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 15
+								}
+							},
+							{
+								"source": {
+									"name": "Gross Rent",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 16
+								}
+							},
+							{
+								"source": {
+									"name": "Hours of Operation",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 17
+								}
+							},
+							{
+								"source": {
+									"name": "Lack of marketing",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 18
+								}
+							},
+							{
+								"source": {
+									"name": "Landlord Issues",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 19
+								}
+							},
+							{
+								"source": {
+									"name": "Legal Entity",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 20
+								}
+							},
+							{
+								"source": {
+									"name": "Location Type",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 21
+								}
+							},
+							{
+								"source": {
+									"name": "Market Type",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 22
+								}
+							},
+							{
+								"source": {
+									"name": "Median income > 50000",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 23
+								}
+							},
+							{
+								"source": {
+									"name": "Members  Dues and PIF",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 24
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Fee Amt",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 25
+								}
+							},
+							{
+								"source": {
+									"name": "Multi-Purpose Room",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 26
+								}
+							},
+							{
+								"source": {
+									"name": "Multi-Purpose Sq Ft",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 27
+								}
+							},
+							{
+								"source": {
+									"name": "No Operating Capital",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 28
+								}
+							},
+							{
+								"source": {
+									"name": "No Sales Revenue",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 29
+								}
+							},
+							{
+								"source": {
+									"name": "Number of Rooms",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 30
+								}
+							},
+							{
+								"source": {
+									"name": "Online Signup",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 31
+								}
+							},
+							{
+								"source": {
+									"name": "Open Status",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 32
+								}
+							},
+							{
+								"source": {
+									"name": "Open Temporary Pending Relo",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 33
+								}
+							},
+							{
+								"source": {
+									"name": "Opened On",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 34
+								}
+							},
+							{
+								"source": {
+									"name": "Original Franchisee Open Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 35
+								}
+							},
+							{
+								"source": {
+									"name": "Other",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 36
+								}
+							},
+							{
+								"source": {
+									"name": "Other Equipment",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 37
+								}
+							},
+							{
+								"source": {
+									"name": "Other Operating System",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 38
+								}
+							},
+							{
+								"source": {
+									"name": "Owner",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 39
+								}
+							},
+							{
+								"source": {
+									"name": "Partnership Dispute",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 40
+								}
+							},
+							{
+								"source": {
+									"name": "Payroll",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 41
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 1",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 42
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 2",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 43
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 3",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 44
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 4",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 45
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 5",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 46
+								}
+							},
+							{
+								"source": {
+									"name": "Percent Owner 6",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 47
+								}
+							},
+							{
+								"source": {
+									"name": "Person  Training Revenue",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 48
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Issues",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 49
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Training",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 50
+								}
+							},
+							{
+								"source": {
+									"name": "Personal Training Revenue",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 51
+								}
+							},
+							{
+								"source": {
+									"name": "Primary Contact",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 52
+								}
+							},
+							{
+								"source": {
+									"name": "Principal Operator",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 53
+								}
+							},
+							{
+								"source": {
+									"name": "Principal Owner",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 54
+								}
+							},
+							{
+								"source": {
+									"name": "Problem %",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 55
+								}
+							},
+							{
+								"source": {
+									"name": "Profit Loss",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 56
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount Last Quarter",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 57
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount Quarter Change",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 58
+								}
+							},
+							{
+								"source": {
+									"name": "Sale Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 59
+								}
+							},
+							{
+								"source": {
+									"name": "Satellite Club",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 60
+								}
+							},
+							{
+								"source": {
+									"name": "Site",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 61
+								}
+							},
+							{
+								"source": {
+									"name": "Stage",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 62
+								}
+							},
+							{
+								"source": {
+									"name": "Team Workouts",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 63
+								}
+							},
+							{
+								"source": {
+									"name": "Territory",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 64
+								}
+							},
+							{
+								"source": {
+									"name": "Total Contracts",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 65
+								}
+							},
+							{
+								"source": {
+									"name": "Transfer Fee",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 66
+								}
+							},
+							{
+								"source": {
+									"name": "Utilities",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 67
+								}
+							},
+							{
+								"source": {
+									"name": "Veteran",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 68
+								}
+							},
+							{
+								"source": {
+									"name": "Virtual Coaching",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 69
+								}
+							},
+							{
+								"source": {
+									"name": "Waxing Account#",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 70
+								}
+							},
+							{
+								"source": {
+									"name": "Website",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 71
+								}
+							},
+							{
+								"source": {
+									"name": "Active CMS",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 72
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Auto Checklist",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 73
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP In-club Training Lead",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 74
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP last Post-Launch Drip email sent",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 75
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Marketing",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 76
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Notes",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 77
+								}
+							},
+							{
+								"source": {
+									"name": "Agreement Renewal Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 78
+								}
+							},
+							{
+								"source": {
+									"name": "Agreement Signed",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 79
+								}
+							},
+							{
+								"source": {
+									"name": "Average Contract Value",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 80
+								}
+							},
+							{
+								"source": {
+									"name": "Average Member Value",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 81
+								}
+							},
+							{
+								"source": {
+									"name": "Billing Account Number",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 82
+								}
+							},
+							{
+								"source": {
+									"name": "BOE",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 83
+								}
+							},
+							{
+								"source": {
+									"name": "Brand",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 84
+								}
+							},
+							{
+								"source": {
+									"name": "City",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 85
+								}
+							},
+							{
+								"source": {
+									"name": "Club OS",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 86
+								}
+							},
+							{
+								"source": {
+									"name": "Club Ready",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 87
+								}
+							},
+							{
+								"source": {
+									"name": "Company",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 88
+								}
+							},
+							{
+								"source": {
+									"name": "Country",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 89
+								}
+							},
+							{
+								"source": {
+									"name": "Created On",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 90
+								}
+							},
+							{
+								"source": {
+									"name": "Currency",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 91
+								}
+							},
+							{
+								"source": {
+									"name": "Draft %",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 92
+								}
+							},
+							{
+								"source": {
+									"name": "Dues",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 93
+								}
+							},
+							{
+								"source": {
+									"name": "Exited Agreements",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 94
+								}
+							},
+							{
+								"source": {
+									"name": "Latitude",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 95
+								}
+							},
+							{
+								"source": {
+									"name": "Location",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 96
+								}
+							},
+							{
+								"source": {
+									"name": "Location #",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 97
+								}
+							},
+							{
+								"source": {
+									"name": "Longitude",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 98
+								}
+							},
+							{
+								"source": {
+									"name": "Main Phone",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 99
+								}
+							},
+							{
+								"source": {
+									"name": "Modified On",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 100
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Attrition",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 101
+								}
+							},
+							{
+								"source": {
+									"name": "NEW Agreements",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 102
+								}
+							},
+							{
+								"source": {
+									"name": "PIF %",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 103
+								}
+							},
+							{
+								"source": {
+									"name": "Remit Amount",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 104
+								}
+							},
+							{
+								"source": {
+									"name": "Renewal Fee",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 105
+								}
+							},
+							{
+								"source": {
+									"name": "Renewal Status",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 106
+								}
+							},
+							{
+								"source": {
+									"name": "Rolling 12 Month Attrition",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 107
+								}
+							},
+							{
+								"source": {
+									"name": "Sq Ft",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 108
+								}
+							},
+							{
+								"source": {
+									"name": "State",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 109
+								}
+							},
+							{
+								"source": {
+									"name": "Status",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 110
+								}
+							},
+							{
+								"source": {
+									"name": "Status Reason",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 111
+								}
+							},
+							{
+								"source": {
+									"name": "Time Zone",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 112
+								}
+							},
+							{
+								"source": {
+									"name": "Total Rent",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 113
+								}
+							},
+							{
+								"source": {
+									"name": "Website URL",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 114
+								}
+							},
+							{
+								"source": {
+									"name": "ZIP Postal Code",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 115
+								}
+							},
+							{
+								"source": {
+									"name": "AFLP Agreement",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 116
+								}
+							},
+							{
+								"source": {
+									"name": "Current C2I",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 117
+								}
+							},
+							{
+								"source": {
+									"name": "Differentiator",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 118
+								}
+							},
+							{
+								"source": {
+									"name": "Temporary Closure",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 119
+								}
+							},
+							{
+								"source": {
+									"name": "Closure Start Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 120
+								}
+							},
+							{
+								"source": {
+									"name": "Closure End Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 121
+								}
+							},
+							{
+								"source": {
+									"name": "Club OS Start Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 122
+								}
+							},
+							{
+								"source": {
+									"name": "Alloy Billing Start date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 123
+								}
+							},
+							{
+								"source": {
+									"name": "FA Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 124
+								}
+							},
+							{
+								"source": {
+									"name": "Address 1",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 125
+								}
+							},
+							{
+								"source": {
+									"name": "Address 2",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 126
+								}
+							},
+							{
+								"source": {
+									"name": "Lease Term",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 127
+								}
+							},
+							{
+								"source": {
+									"name": "Lease Expiration Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 128
+								}
+							},
+							{
+								"source": {
+									"name": "FA Exp Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 129
+								}
+							},
+							{
+								"source": {
+									"name": "ADA",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 130
+								}
+							},
+							{
+								"source": {
+									"name": "Ad Fee Start Date (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 131
+								}
+							},
+							{
+								"source": {
+									"name": "ADA Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 132
+								}
+							},
+							{
+								"source": {
+									"name": "Advertising % (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 133
+								}
+							},
+							{
+								"source": {
+									"name": "Base Fee % (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 134
+								}
+							},
+							{
+								"source": {
+									"name": "Cerologist Training (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 135
+								}
+							},
+							{
+								"source": {
+									"name": "Charity Fee",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 136
+								}
+							},
+							{
+								"source": {
+									"name": "Charity Fee Start Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 137
+								}
+							},
+							{
+								"source": {
+									"name": "Fee Start Date (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 138
+								}
+							},
+							{
+								"source": {
+									"name": "General Ad Fund (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 139
+								}
+							},
+							{
+								"source": {
+									"name": "General Ad Fund Start Date (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 140
+								}
+							},
+							{
+								"source": {
+									"name": "Heart First Recipient",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 141
+								}
+							},
+							{
+								"source": {
+									"name": "Incentivized Income Threshold (contains a string of formulas) (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 142
+								}
+							},
+							{
+								"source": {
+									"name": "Late Fee % (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 143
+								}
+							},
+							{
+								"source": {
+									"name": "Layout Approved Date",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 144
+								}
+							},
+							{
+								"source": {
+									"name": "Lease Term (Months)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 145
+								}
+							},
+							{
+								"source": {
+									"name": "Local Ad Fund Amt (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 146
+								}
+							},
+							{
+								"source": {
+									"name": "Local Ad Fund Start Date (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 147
+								}
+							},
+							{
+								"source": {
+									"name": "Minimum Royalty (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 148
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Fee Start Date (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 149
+								}
+							},
+							{
+								"source": {
+									"name": "Real Estate Status",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 150
+								}
+							},
+							{
+								"source": {
+									"name": "Software Fee – Tax Rate (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 151
+								}
+							},
+							{
+								"source": {
+									"name": "Software Fee (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 152
+								}
+							},
+							{
+								"source": {
+									"name": "Software Fee Total (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 153
+								}
+							},
+							{
+								"source": {
+									"name": "Tech Fee (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 154
+								}
+							},
+							{
+								"source": {
+									"name": "Tech Fee Start Date (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 155
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Club Fee – Start Date (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 156
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Club Monthly Fee (AF)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 157
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Studio Fee (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 158
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Studio Fee Start Date (WTC)",
+									"type": "String"
+								},
+								"sink": {
+									"type": "String",
+									"ordinal": 159
+								}
+							}
+						]
+					}
 				},
 				"inputs": [
 					{
 						"referenceName": "DelimitedText2",
 						"type": "DatasetReference"
 					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DropToArchive",
+						"type": "DatasetReference"
+					}
 				]
+			},
+			{
+				"name": "Delete1",
+				"type": "Delete",
+				"dependsOn": [
+					{
+						"activity": "Copy data2",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DelimitedText2",
+						"type": "DatasetReference"
+					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "DropToArchive",
+							"type": "LinkedServiceReference"
+						},
+						"path": "testrishabh"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true
+					}
+				}
 			}
 		],
 		"annotations": []
