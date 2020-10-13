@@ -10,7 +10,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "archive.csv",
+				"fileName": {
+					"value": "@concat('FRMLocation_',utcnow(),'.txt')",
+					"type": "Expression"
+				},
 				"folderPath": "archive",
 				"container": "testrishabh"
 			},
