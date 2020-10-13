@@ -39,7 +39,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "LocationID",
+									"name": "\"Location ID\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -51,7 +51,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "mile_pop1",
+									"name": "\"1 mile pop\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -63,7 +63,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "mile_pop3",
+									"name": "\"3 mile pop\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -75,7 +75,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "mile_pop5",
+									"name": "\"5 mile pop\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -87,7 +87,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ActualOpening",
+									"name": "\"Actual Opening\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -99,7 +99,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AverageTerm",
+									"name": "\"AverageTerm\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -111,7 +111,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Avg_monthly_gross_personal_training_revenue",
+									"name": "\"Avg  monthly gross personal training revenue\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -123,7 +123,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "BOEVerified",
+									"name": "\"BOE Verified\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -135,7 +135,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CloseDate",
+									"name": "\"Close Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -147,7 +147,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Competition",
+									"name": "\"Competition\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -159,7 +159,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "EmailAddress",
+									"name": "\"E-mail Address\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -171,7 +171,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ExchangeRate",
+									"name": "\"Exchange Rate\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -183,7 +183,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ExistingSalesRep",
+									"name": "\"Existing Sales Rep\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -195,7 +195,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ExpressLocation",
+									"name": "\"Express Location\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -207,7 +207,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FinancingType",
+									"name": "\"Financing Type\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -219,7 +219,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "GrossRent",
+									"name": "\"Gross Rent\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -231,7 +231,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "HoursofOperation",
+									"name": "\"Hours of Operation\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -243,7 +243,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Lackofmarketing",
+									"name": "\"Lack of marketing\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -255,7 +255,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "LandlordIssues",
+									"name": "\"Landlord Issues\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -267,7 +267,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "LegalEntity",
+									"name": "\"Legal Entity\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -279,7 +279,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "LocationType",
+									"name": "\"Location Type\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -291,7 +291,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MarketType",
+									"name": "\"Market Type\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -303,7 +303,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Medianincome",
+									"name": "\"Median income > $50000\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -315,7 +315,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MembersDuesandPIF",
+									"name": "\"Members  Dues and PIF\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -327,7 +327,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MonthlyFeeAmt",
+									"name": "\"Monthly Fee Amt\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -339,7 +339,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MultiPurposeRoom",
+									"name": "\"Multi-Purpose Room\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -351,7 +351,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MultiPurposeSqFt",
+									"name": "\"Multi-Purpose Sq Ft\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -363,7 +363,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "NoOperatingCapital",
+									"name": "\"No Operating Capital\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -375,7 +375,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "NoSalesRevenue",
+									"name": "\"No Sales Revenue\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -387,7 +387,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "NumberofRooms",
+									"name": "\"Number of Rooms\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -399,7 +399,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "OnlineSignup",
+									"name": "\"Online Signup\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -411,7 +411,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "OpenStatus",
+									"name": "\"Open Status\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -423,7 +423,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "OpenTemporaryPendingRelo",
+									"name": "\"Open Temporary Pending Relo\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -435,7 +435,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "OpenedOn",
+									"name": "\"Opened On\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -447,7 +447,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "OriginalFranchiseeOpenDate",
+									"name": "\"Original Franchisee Open Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -459,7 +459,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Other",
+									"name": "\"Other\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -471,7 +471,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "OtherEquipment",
+									"name": "\"Other Equipment\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -483,7 +483,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "OtherOperatingSystem",
+									"name": "\"Other Operating System\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -495,7 +495,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Owner",
+									"name": "\"Owner\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -507,7 +507,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PartnershipDispute",
+									"name": "\"Partnership Dispute\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -519,7 +519,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Payroll",
+									"name": "\"Payroll\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -531,7 +531,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PercentOwner1",
+									"name": "\"Percent Owner 1\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -543,7 +543,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PercentOwner2",
+									"name": "\"Percent Owner 2\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -555,7 +555,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PercentOwner3",
+									"name": "\"Percent Owner 3\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -567,7 +567,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PercentOwner4",
+									"name": "\"Percent Owner 4\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -579,7 +579,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PercentOwner5",
+									"name": "\"Percent Owner 5\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -591,7 +591,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PercentOwner6",
+									"name": "\"Percent Owner 6\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -603,7 +603,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PersonTrainingRevenue",
+									"name": "\"Person  Training Revenue\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -615,7 +615,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PersonalIssues",
+									"name": "\"Personal Issues\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -627,7 +627,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PersonalTraining",
+									"name": "\"Personal Training\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -639,7 +639,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PersonalTrainingRevenue",
+									"name": "\"Personal Training Revenue\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -651,7 +651,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PrimaryContact",
+									"name": "\"Primary Contact\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -663,7 +663,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PrincipalOperator",
+									"name": "\"Principal Operator\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -675,7 +675,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PrincipalOwner",
+									"name": "\"Principal Owner\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -687,7 +687,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Problem",
+									"name": "\"Problem %\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -699,7 +699,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ProfitLoss",
+									"name": "\"Profit Loss\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -711,7 +711,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "RemitAmountLastQuarter",
+									"name": "\"Remit Amount Last Quarter\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -723,7 +723,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "RemitAmountQuarterChange",
+									"name": "\"Remit Amount Quarter Change\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -735,7 +735,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "SaleDate",
+									"name": "\"Sale Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -747,7 +747,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "SatelliteClub",
+									"name": "\"Satellite Club\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -759,7 +759,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Site",
+									"name": "\"Site\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -771,7 +771,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Stage",
+									"name": "\"Stage\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -783,7 +783,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "TeamWorkouts",
+									"name": "\"Team Workouts\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -795,7 +795,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Territory",
+									"name": "\"Territory\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -807,7 +807,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "TotalContracts",
+									"name": "\"Total Contracts\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -819,7 +819,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "TransferFee",
+									"name": "\"Transfer Fee\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -831,7 +831,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Utilities",
+									"name": "\"Utilities\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -843,7 +843,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Veteran",
+									"name": "\"Veteran\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -855,7 +855,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "VirtualCoaching",
+									"name": "\"Virtual Coaching\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -867,7 +867,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WaxingAccount#",
+									"name": "\"Waxing Account#\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -879,7 +879,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Website",
+									"name": "\"Website\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -891,7 +891,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ActiveCMS",
+									"name": "\"Active CMS\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -903,7 +903,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPAutoChecklist",
+									"name": "\"AFLP Auto Checklist\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -915,7 +915,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPInclubTrainingLead",
+									"name": "\"AFLP In-club Training Lead\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -927,7 +927,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPlastPostLaunchDripemailsent",
+									"name": "\"AFLP last Post-Launch Drip email sent\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -939,7 +939,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPMarketing",
+									"name": "\"AFLP Marketing\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -951,7 +951,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPNotes",
+									"name": "\"AFLP Notes\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -963,7 +963,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AgreementRenewalDate",
+									"name": "\"Agreement Renewal Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -975,7 +975,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AgreementSigned",
+									"name": "\"Agreement Signed\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -987,7 +987,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AverageContractValue",
+									"name": "\"Average Contract Value\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -999,7 +999,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AverageMemberValue",
+									"name": "\"Average Member Value\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1011,7 +1011,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "BillingAccountNumber",
+									"name": "\"Billing Account Number\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1023,7 +1023,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "BOE",
+									"name": "\"BOE\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1035,7 +1035,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Brand",
+									"name": "\"Brand\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1047,7 +1047,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "City",
+									"name": "\"City\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1059,7 +1059,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ClubOS",
+									"name": "\"Club OS\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1071,7 +1071,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ClubReady",
+									"name": "\"Club Ready\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1083,7 +1083,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Company",
+									"name": "\"Company\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1095,7 +1095,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Country",
+									"name": "\"Country\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1107,7 +1107,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CreatedOn",
+									"name": "\"Created On\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1119,7 +1119,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Currency",
+									"name": "\"Currency\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1131,7 +1131,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Draft",
+									"name": "\"Draft %\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1143,7 +1143,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Dues",
+									"name": "\"Dues\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1155,7 +1155,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ExitedAgreements",
+									"name": "\"Exited Agreements\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1167,7 +1167,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Latitude",
+									"name": "\"Latitude\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1179,7 +1179,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Location",
+									"name": "\"Location\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1191,7 +1191,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Location#",
+									"name": "\"Location #\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1203,7 +1203,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Longitude",
+									"name": "\"Longitude\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1215,7 +1215,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MainPhone",
+									"name": "\"Main Phone\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1227,7 +1227,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ModifiedOn",
+									"name": "\"Modified On\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1239,7 +1239,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "MonthlyAttrition",
+									"name": "\"Monthly Attrition\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1251,7 +1251,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "NEWAgreements",
+									"name": "\"NEW Agreements\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1263,7 +1263,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "PIF",
+									"name": "\"PIF %\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1275,7 +1275,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "RemitAmount",
+									"name": "\"Remit Amount\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1287,7 +1287,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "RenewalFee",
+									"name": "\"Renewal Fee\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1299,7 +1299,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "RenewalStatus",
+									"name": "\"Renewal Status\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1311,7 +1311,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Rolling12MonthAttrition",
+									"name": "\"Rolling 12 Month Attrition\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1323,7 +1323,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "SqFt",
+									"name": "\"Sq Ft\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1335,7 +1335,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "State",
+									"name": "\"State\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1347,7 +1347,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Status",
+									"name": "\"Status\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1359,7 +1359,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "StatusReason",
+									"name": "\"Status Reason\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1371,7 +1371,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "TimeZone",
+									"name": "\"Time Zone\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1383,7 +1383,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "TotalRent",
+									"name": "\"Total Rent\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1395,7 +1395,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "WebsiteURL",
+									"name": "\"Website URL\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1407,7 +1407,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ZIPPostalCode",
+									"name": "\"ZIP Postal Code\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1419,7 +1419,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AFLPAgreement",
+									"name": "\"AFLP Agreement\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1431,7 +1431,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "CurrentC2I",
+									"name": "\"Current C2I\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1443,7 +1443,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Differentiator",
+									"name": "\"Differentiator\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1455,7 +1455,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "TemporaryClosure",
+									"name": "\"Temporary Closure\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1467,7 +1467,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ClosureStartDate",
+									"name": "\"Closure Start Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1479,7 +1479,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ClosureEndDate",
+									"name": "\"Closure End Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1491,7 +1491,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "ClubOSStartDate",
+									"name": "\"Club OS Start Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1503,7 +1503,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "AlloyBillingStartdate",
+									"name": "\"Alloy Billing Start date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1515,7 +1515,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "FADate",
+									"name": "\"FA Date\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1527,7 +1527,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Address1",
+									"name": "\"Address 1\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1539,7 +1539,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Address2",
+									"name": "\"Address 2\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1551,7 +1551,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "LeaseTerm",
+									"name": "\"Lease Term\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1563,7 +1563,379 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "LeaseExpirationDate",
+									"name": "\"Lease Expiration Date\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "FA Exp Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"FA Exp Date\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ADA",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"ADA\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Ad Fee Start Date (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Ad Fee Start Date (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "ADA Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"ADA Date\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Advertising % (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Advertising % (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Base Fee % (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Base Fee % (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Cerologist Training (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Cerologist Training (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Charity Fee",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Charity Fee\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Charity Fee Start Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Charity Fee Start Date\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Fee Start Date (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Fee Start Date (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "General Ad Fund (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"General Ad Fund (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "General Ad Fund Start Date (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"General Ad Fund Start Date (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Heart First Recipient",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Heart First Recipient\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Incentivized Income Threshold (contains a string of formulas) (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Incentivized Income Threshold (contains a string of formulas) (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Late Fee % (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Late Fee % (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Layout Approved Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Layout Approved Date\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Lease Term (Months)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Lease Term (Months)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Local Ad Fund Amt (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Local Ad Fund Amt (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Local Ad Fund Start Date (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Local Ad Fund Start Date (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Minimum Royalty (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Minimum Royalty (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Monthly Fee Start Date (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Monthly Fee Start Date (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Real Estate Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Real Estate Status\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Software Fee – Tax Rate (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Software Fee – Tax Rate (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Software Fee (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Software Fee (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Software Fee Total (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Software Fee Total (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Tech Fee (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Tech Fee (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Tech Fee Start Date (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Tech Fee Start Date (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Club Fee – Start Date (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Unopened Club Fee – Start Date (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Club Monthly Fee (AF)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Unopened Club Monthly Fee (AF)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Studio Fee (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Unopened Studio Fee (WTC)\"",
+									"type": "String",
+									"physicalType": "nvarchar"
+								}
+							},
+							{
+								"source": {
+									"name": "Unopened Studio Fee Start Date (WTC)",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "\"Unopened Studio Fee Start Date (WTC)\"",
 									"type": "String",
 									"physicalType": "nvarchar"
 								}
@@ -1588,6 +1960,33 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[FRMLShivam_Final]"
+				},
+				"linkedServiceName": {
+					"referenceName": "SqlServer1",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": []
