@@ -44,19 +44,13 @@
 				"typeProperties": {
 					"url": "https://hooks.glip.com/webhook/d31b48c2-dea1-4c00-a82d-013a291d0d04",
 					"method": "POST",
-					"body": "",
-					"linkedServices": [
-						{
-							"referenceName": "AzureBlobStorage2",
-							"type": "LinkedServiceReference"
-						}
-					],
-					"datasets": [
-						{
-							"referenceName": "Json1",
-							"type": "DatasetReference"
-						}
-					]
+					"headers": {
+						"Content-Type": "application/json"
+					},
+					"body": {
+						"value": "{\n        type: \"POST\",\n        data :\"ADF Notification\",\n        url: \"https://hooks.glip.com/webhook/d31b48c2-dea1-4c00-a82d-013a291d0d04\",\n        contentType: \"application/json\"\n    }",
+						"type": "Expression"
+					}
 				}
 			}
 		],
