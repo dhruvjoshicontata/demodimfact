@@ -44,13 +44,7 @@
 				"typeProperties": {
 					"url": "https://hooks.glip.com/webhook/d31b48c2-dea1-4c00-a82d-013a291d0d04",
 					"method": "POST",
-					"headers": {
-						"Content-Type": "application/json"
-					},
-					"body": {
-						"value": "{\n\"status\":\"success\",\n\"data\":{\n\n\"Message\":\"ADF Pipeline Notification\"\n}\n}",
-						"type": "Expression"
-					},
+					"body": "",
 					"linkedServices": [
 						{
 							"referenceName": "AzureBlobStorage2",
