@@ -1,0 +1,69 @@
+{
+	"name": "AzureSQLjsontotable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "TestAssignment_LinkedService_Rishabh",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"DBName": {
+					"value": "@dataset().DB_NAME",
+					"type": "Expression"
+				},
+				"ServerName": {
+					"value": "@dataset().SERVER_NAME",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"DB_NAME": {
+				"type": "string",
+				"defaultValue": "Traniee_Assignment"
+			},
+			"SERVER_NAME": {
+				"type": "string",
+				"defaultValue": "contata.database.windows.net"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "clubId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "locationId",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "eventId",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "attendeeId",
+				"type": "bigint",
+				"precision": 19
+			},
+			{
+				"name": "attendeeStatus",
+				"type": "varchar"
+			},
+			{
+				"name": "beBack",
+				"type": "varchar"
+			},
+			{
+				"name": "visitType",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "json_task"
+		}
+	}
+}

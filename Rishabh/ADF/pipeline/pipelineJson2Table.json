@@ -1,0 +1,124 @@
+{
+	"name": "pipelineJson2Table",
+	"properties": {
+		"activities": [
+			{
+				"name": "PL_JSON2TABLE",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "JsonSource",
+						"storeSettings": {
+							"type": "AzureBlobStorageReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*.json",
+							"enablePartitionDiscovery": false
+						}
+					},
+					"sink": {
+						"type": "AzureSqlSink"
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['content'][0]['clubId']"
+								},
+								"sink": {
+									"name": "clubId",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"path": "$['content'][0]['locationId']"
+								},
+								"sink": {
+									"name": "locationId",
+									"type": "Int32"
+								}
+							},
+							{
+								"source": {
+									"path": "$['content'][0]['eventId']"
+								},
+								"sink": {
+									"name": "eventId",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['content'][0]['attendeeId']"
+								},
+								"sink": {
+									"name": "attendeeId",
+									"type": "Int64"
+								}
+							},
+							{
+								"source": {
+									"path": "$['content'][0]['attendeeStatus']"
+								},
+								"sink": {
+									"name": "attendeeStatus",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['content'][0]['beBack']"
+								},
+								"sink": {
+									"name": "beBack",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"path": "$['content'][0]['visitType']"
+								},
+								"sink": {
+									"name": "visitType",
+									"type": "String"
+								}
+							}
+						],
+						"collectionReference": ""
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "JSON2Table",
+						"type": "DatasetReference",
+						"parameters": {
+							"Container_Name": "testrishabh"
+						}
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "AzureSQLjsontotable",
+						"type": "DatasetReference",
+						"parameters": {
+							"DB_NAME": "Traniee_Assignment",
+							"SERVER_NAME": "contata.database.windows.net"
+						}
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}
